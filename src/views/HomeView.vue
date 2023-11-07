@@ -9,22 +9,20 @@
     <Stars class="-z-10 fixed" />
   </div>
   <div class="flex flex-col h-screen fixed right-12 top-0 p-7 justify-around">
-    <a class="content-l text-2xl font-thin w-min" href="#About">About</a>
+    <a class="content-l text-2xl font-thin w-min" href="#Contact">About</a>
     <a class="content-l text-2xl font-thin w-min" href="#Contact">Contact</a>
     <a class="content-l text-2xl font-thin w-min" href="#Skills" >Skills</a>
     <a class="content-l text2xl font-thin w-min" href="#Projects">Projects</a>
   </div>
   <Title />
-  <About id="About" />
+  <About id="Contact" />
   <Games />
-  <Contact id="Contact" />
-  <!-- <Contents /> -->
+  <Contact id="About" />
   <Scroller />
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
-// import Contents from "@/components/Contents.vue";
 import Scroller from "@/components/Scroller.vue";
 import Stars from "@/components/Stars.vue";
 import Title from "@/components/Title.vue";
@@ -72,13 +70,11 @@ div.img {
 }
 .content-l::after{
   transition: 0.4s ease-in-out;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background: red;
-  position: absolute;
-  z-index: -1;
   content: "";
+  @apply w-0 bg-blue-300/50 absolute -z-10 top-1/2 h-1/2 bottom-0 right-0 ;
 }
+.content-l:hover::after{
+  @apply w-full;
+}
+
 </style>
