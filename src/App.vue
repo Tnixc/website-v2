@@ -1,7 +1,10 @@
 <template>
   <div id="fixed" class="bg fixed h-screen -z-50 inset-0">
     <div class="flex justify-center top-0 left-0 right-0 -z-30">
-      <div class="img w-full" :style="{ backgroundPosition: backgroundPosition }"></div>
+      <div
+        class="img w-full"
+        :style="{ backgroundPosition: backgroundPosition }"
+      ></div>
     </div>
   </div>
   <RouterView />
@@ -22,12 +25,17 @@ onUnmounted(() => {
 
 function handleScroll() {
   const scrollY = window.scrollY;
-  const limit = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
-  const translateY = scrollY * 1000 / limit * 1.5;
+  const limit = Math.max(
+    document.body.scrollHeight,
+    document.body.offsetHeight,
+    document.documentElement.clientHeight,
+    document.documentElement.scrollHeight,
+    document.documentElement.offsetHeight
+  );
+  const translateY = ((scrollY * 1000) / limit) * 0.5;
   backgroundPosition.value = `right ${-translateY}px`;
 }
 </script>
-
 <style scoped>
 img {
   max-width: 1000px;
@@ -43,5 +51,15 @@ div.img {
   filter: brightness(1.2);
   background-repeat: no-repeat;
   background-size: 1000px;
+}
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@font-face {
+  font-family: "Geist Mono";
+  src: url("https://pham.codes/d/GeistMonoVF.woff2") format("woff2");
+}
+body{
+  font-family: "Inter", sans-serif;
 }
 </style>
