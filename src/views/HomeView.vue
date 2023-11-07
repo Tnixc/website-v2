@@ -8,21 +8,30 @@
     </div>
     <Stars class="-z-10 fixed" />
   </div>
+  <div class="flex flex-col h-screen fixed right-12 top-0 p-7 justify-around">
+    <a class="content-l text-2xl font-thin w-min" href="#About">About</a>
+    <a class="content-l text-2xl font-thin w-min" href="#Contact">Contact</a>
+    <a class="content-l text-2xl font-thin w-min" href="#Skills" >Skills</a>
+    <a class="content-l text2xl font-thin w-min" href="#Projects">Projects</a>
+  </div>
   <Title />
-  <About />
+  <About id="About" />
   <Games />
-  <Contact />
+  <Contact id="Contact" />
+  <!-- <Contents /> -->
   <Scroller />
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
+// import Contents from "@/components/Contents.vue";
+import Scroller from "@/components/Scroller.vue";
 import Stars from "@/components/Stars.vue";
 import Title from "@/components/Title.vue";
 import About from "@/components/About.vue";
 import Games from "@/components/Games.vue";
 import Contact from "@/components/Contact.vue";
-import Scroller from "@/components/Scroller.vue";
+
 const backgroundPosition = ref("right 0px");
 
 onMounted(() => {
@@ -47,10 +56,6 @@ function handleScroll() {
 }
 </script>
 <style scoped>
-img {
-  max-width: 1000px;
-  filter: brightness(1.2);
-}
 #fixed {
   background-color: #efefef;
 }
@@ -61,5 +66,19 @@ div.img {
   filter: brightness(1.2);
   background-repeat: no-repeat;
   background-size: 1000px;
+}
+.content-l{
+  position: relative;
+}
+.content-l::after{
+  transition: 0.4s ease-in-out;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: red;
+  position: absolute;
+  z-index: -1;
+  content: "";
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div
-    class="fixed w-12 right-0 top-0  z-40 " :style="{ height }"
-  ><div class="absolute w-12 top-0 h-1/2 bg-black"></div></div>
+    class="border-l-2 border-blue-700 fixed w-12 right-0 top-0  z-40 " :style="{ height }"
+  ></div>
 </template>
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";

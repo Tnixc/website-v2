@@ -1,5 +1,5 @@
 <template>
-  <h1 class="ml-24 text-5xl bg-blue-200 w-7/12 border-l-2 border-blue-500 shadow-xl">
+  <h1 class="ml-24 mt-24 text-5xl bg-blue-200 w-7/12 border-l-2 border-t-2 border-blue-500 shadow-xl">
     ## Contact + Links
   </h1>
   <div
