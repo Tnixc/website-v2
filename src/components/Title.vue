@@ -1,20 +1,33 @@
 <template>
-  <div class="typewriter">
-    <h1>
-      {{ typedText }}
+  <div
+    class="w-11/12 lg:w-1/2 h-screen flex flex-col justify-center p-12 bg-zinc-100/50 backdrop-blur-md border-r-2 border-b-2">
+    <h2 class="text-5xl text-zinc-700">Haiii</h2>
+    <h1 class="text-9xl">I'm Tnixc</h1>
+    <h2 class="text-3xl">
+      Just a 15y/o {{ typedText }}
       <span class="underscore" :class="{ flash: showUnderscore }">_</span>
-    </h1>
+    </h2>
   </div>
 </template>
 
 <script lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted } from "vue";
 
 export default {
   setup() {
-    const texts: string[] = ['Text 1', 'Text 2', 'Text 3'];
+    const texts: string[] = [
+      "webdev",
+      "anime enjoyer",
+      "webnovel reader",
+      "aspiring 2D Artist",
+      "minecraft enjoyer",
+      "rhythm game player",
+      "aspiring 3D artist",
+      "highschool student",
+      "webtoon reader",
+    ];
     const currentIndex = ref<number>(0);
-    const typedText = ref<string>('');
+    const typedText = ref<string>("");
     const showUnderscore = ref<boolean>(false);
 
     onMounted(() => {
@@ -24,7 +37,7 @@ export default {
     const typeAndCycleText = async () => {
       while (true) {
         await typeText(texts[currentIndex.value]);
-        await sleep(1000); // Delay before backspacing and switching to the next text
+        await sleep(1000);
         await backspace();
         currentIndex.value = (currentIndex.value + 1) % texts.length;
       }
@@ -33,7 +46,7 @@ export default {
     const typeText = (text: string) => {
       return new Promise<void>((resolve) => {
         let charIndex = 0;
-        const delay = 100; // Delay between typing characters (adjust as needed)
+        const delay = 100;
 
         const typingInterval = setInterval(() => {
           if (charIndex < text.length) {
@@ -49,7 +62,7 @@ export default {
 
     const backspace = () => {
       return new Promise<void>((resolve) => {
-        const delay = 50; // Delay between backspacing characters (adjust as needed)
+        const delay = 50;
         const textToType = typedText.value;
         let charIndex = textToType.length;
 
@@ -80,7 +93,10 @@ export default {
 </script>
 
 <style scoped>
-
+* {
+  font-family: "Geist Mono", monospace;
+  font-weight: 128;
+}
 .underscore {
   animation: blink 0.5s infinite;
 }
@@ -90,7 +106,8 @@ export default {
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -99,7 +116,8 @@ export default {
 }
 
 @keyframes flash {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
