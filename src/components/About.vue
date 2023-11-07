@@ -4,7 +4,7 @@
       class="bg-zinc-200 text-9xl w-fit"
       v-motion
       :initial="{ opacity: 0, y: 100 }"
-      :visible="{ opacity: 1, y: 0, transition:{
+      :visibleOnce="{ opacity: 1, y: 0, transition:{
       type: 'keyframes',
       ease: 'ease-in-out',
     }}"
@@ -14,12 +14,12 @@
     </div>
     <div class="pr-24 w-10/12" v-motion
     :initial="{ opacity: 0, y: 100 }"
-    :visible="{ opacity: 1, y: 0, transition:{
+    :visibleOnce="{ opacity: 1, y: 0, transition:{
     type: 'keyframes',
     ease: 'ease-in-out',
   }}">
       <div class="bg-zinc-50/50 backdrop-blur-md border-2 p-12">
-        <div class="flex gap-2 text-lg">
+        <div class="flex gap-2 text-lg flex-wrap">
           <span>
             <span>{{ TimeDiff }}</span> seconds old
           </span>
