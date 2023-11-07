@@ -7,6 +7,7 @@
       Just a 15y/o {{ typedText }}
       <span class="underscore" :class="{ flash: showUnderscore }">_</span>
     </h2>
+    <p class="absolute bottom-10 left-1/2 -translate-x-1/2">scroll to begin</p>
   </div>
 </template>
 

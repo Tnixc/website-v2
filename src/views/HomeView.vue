@@ -10,6 +10,7 @@
   </div>
   <Title />
   <About />
+  <Games />
   <Contact />
 </template>
 
@@ -18,6 +19,7 @@ import { ref, onMounted, onUnmounted } from "vue";
 import Stars from "@/components/Stars.vue";
 import Title from "@/components/Title.vue";
 import About from "@/components/About.vue";
+import Games from "@/components/Games.vue";
 import Contact from "@/components/Contact.vue";
 const backgroundPosition = ref("right 0px");
 
