@@ -9,9 +9,8 @@
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Cyberpunk 2077</p>
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Va-11 Hall-A</p>
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Bauldurs Gate 3</p>
-      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Divinity Two</p>
+      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Divinity Two Original Sin</p>
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Cities Skylines 2</p>
-
     </div>
   </div>
 </template>
