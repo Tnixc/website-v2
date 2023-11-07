@@ -10,7 +10,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
 
-const backgroundPosition = ref("0px 0px");
+const backgroundPosition = ref("right 0px");
 
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
@@ -22,8 +22,9 @@ onUnmounted(() => {
 
 function handleScroll() {
   const scrollY = window.scrollY;
-  const translateY = scrollY * 0.1;
-  backgroundPosition.value = `0px ${-translateY}px`;
+  const limit = Math.max( document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
+  const translateY = scrollY * 1000 / limit * 1.5;
+  backgroundPosition.value = `right ${-translateY}px`;
 }
 </script>
 
