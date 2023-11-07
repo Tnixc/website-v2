@@ -1,8 +1,46 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
-
+  <div id="fixed" class="bg fixed h-screen -z-50 inset-0">
+    <div class="flex justify-center top-0 left-0 right-0 -z-30">
+      <div class="img w-full" :style="{ backgroundPosition: backgroundPosition }"></div>
+    </div>
+  </div>
   <RouterView />
 </template>
+
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from "vue";
+
+const backgroundPosition = ref("0px 0px");
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
+
+function handleScroll() {
+  const scrollY = window.scrollY;
+  const translateY = scrollY * 0.1;
+  backgroundPosition.value = `0px ${-translateY}px`;
+}
+</script>
+
+<style scoped>
+img {
+  max-width: 1000px;
+  filter: brightness(1.2);
+}
+div.fixed {
+  background-color: #efefef;
+}
+div.img {
+  height: 100vh;
+  max-width: 1000px;
+  background-image: url("./assets/Explight.webp");
+  filter: brightness(1.2);
+  background-repeat: no-repeat;
+  background-size: 1000px;
+}
+</style>
