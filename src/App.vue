@@ -11,12 +11,17 @@ export default {
 };
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'); */
 @font-face {
   font-family: "Geist Mono";
   src: url("https://pham.codes/d/GeistMonoVF.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Geist";
+  src: url("https://pham.codes/d/GeistVF.woff2") format("woff2");
+}
+
 body{
-  font-family: "Inter", sans-serif;
+  font-family: "Geist", sans-serif;
 }
 </style>

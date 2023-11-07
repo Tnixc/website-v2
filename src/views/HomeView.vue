@@ -10,8 +10,7 @@
   </div>
   <Title />
   <About />
-  <div class="h-screen"></div>
-  <div class="h-screen"></div>
+  <Contact />
 </template>
 
 <script setup lang="ts">
@@ -19,6 +18,7 @@ import { ref, onMounted, onUnmounted } from "vue";
 import Stars from "@/components/Stars.vue";
 import Title from "@/components/Title.vue";
 import About from "@/components/About.vue";
+import Contact from "@/components/Contact.vue";
 const backgroundPosition = ref("right 0px");
 
 onMounted(() => {

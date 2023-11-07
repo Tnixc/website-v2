@@ -10,7 +10,7 @@
     }}"
       :delay="600"
     >
-      <h1>About me.</h1>
+      <h1>&lt;About /&gt;</h1>
     </div>
     <div class="pr-24 w-10/12" v-motion
     :initial="{ opacity: 0, y: 100 }"
@@ -27,6 +27,8 @@
           <span id="pronouns" class="relative">Pronouns: he/him</span>
           <span>•</span>
           <span>Time Zone: <span> Eastern Standard Time </span></span>
+          <span>•</span>
+          <span id="flags" class="relative"><img src="https://em-content.zobj.net/source/twitter/376/flag-hong-kong-sar-china_1f1ed-1f1f0.png" alt="" class="w-6 inline"><img class="w-6 inline ml-2" src="https://em-content.zobj.net/source/twitter/376/flag-canada_1f1e8-1f1e6.png" alt=""></span>
         </div>
         <p class="pt-4">
           I'm a 15 year old high school student from Hong Kong living in Canada.
@@ -65,7 +67,11 @@ export default defineComponent({
 h1,
 span {
   font-family: "Geist Mono", monospace;
-  font-weight: 128;
+  font-variation-settings: "wght" 128;
+  transition: 0.5s linear;
+}
+h1:hover{
+  font-variation-settings: "wght" 32;
 }
 p {
   font-family: "Inter", sans-serif;
@@ -77,4 +83,13 @@ p {
   background-color: #c6b3ff50;
   z-index: -1;
 }
+#flags::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-color: #506AEC50;
+  z-index: -1;
+}
+
+
 </style>
