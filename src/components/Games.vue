@@ -1,5 +1,5 @@
 <template>
-  <h1 class="border-l-2 ml-48 text-5xl bg-violet-200 w-8/12 border-violet-500">&lt;Games /&gt;</h1>
+  <h1 class="border-l-2 ml-48 text-5xl bg-violet-200 w-8/12 border-violet-500">## Games</h1>
   <div class="border-l-2 ml-48 p-12 bg-violet-100/40 w-8/12 backdrop-blur-lg border-violet-300">
     <div class="flex gap-2 flex-wrap">
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Minecraft - Mainly building but I played 1.8 pvp too</p>

@@ -24,4 +24,7 @@ export default {
 body{
   font-family: "Geist", sans-serif;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
 </style>

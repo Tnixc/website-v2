@@ -10,7 +10,7 @@
     }}"
       :delay="600"
     >
-      <h1>&lt;About /&gt;</h1>
+      <h1># About</h1>
     </div>
     <div class="pr-24 w-10/12" v-motion
     :initial="{ opacity: 0, y: 100 }"
@@ -18,8 +18,8 @@
     type: 'keyframes',
     ease: 'ease-in-out',
   }}">
-      <div class="bg-zinc-50/50 backdrop-blur-md border-2 p-12">
-        <div class="flex gap-2 text-lg flex-wrap">
+      <div class="bg-zinc-50/50 border-2 p-12 backdrop-blur-md shadow-xl">
+        <div class="flex gap-2 text-lg flex-wrap backdrop-blur-lg">
           <span>
             <span>{{ TimeDiff }}</span> seconds old
           </span>

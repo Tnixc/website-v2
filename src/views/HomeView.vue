@@ -1,17 +1,18 @@
 <template>
   <div id="fixed" class="bg fixed h-screen -z-50 inset-0 bg-zinc-400/10">
-    <Stars class="z-50" />
-    <div class="flex justify-center top-0 left-0 right-0 -z-30">
+    <div class="flex justify-center top-0 left-0 right-0 -z-40">
       <div
         class="img w-full"
         :style="{ backgroundPosition: backgroundPosition }"
       ></div>
     </div>
+    <Stars class="-z-10 fixed" />
   </div>
   <Title />
   <About />
   <Games />
   <Contact />
+  <Scroller />
 </template>
 
 <script setup lang="ts">
@@ -21,6 +22,7 @@ import Title from "@/components/Title.vue";
 import About from "@/components/About.vue";
 import Games from "@/components/Games.vue";
 import Contact from "@/components/Contact.vue";
+import Scroller from "@/components/Scroller.vue";
 const backgroundPosition = ref("right 0px");
 
 onMounted(() => {

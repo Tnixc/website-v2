@@ -1,6 +1,6 @@
 <template>
-  <h1 class="ml-24 text-5xl bg-blue-200 w-7/12 border-l-2 border-blue-500">
-    &lt;Contact + Links /&gt;
+  <h1 class="ml-24 text-5xl bg-blue-200 w-7/12 border-l-2 border-blue-500 shadow-xl">
+    ## Contact + Links
   </h1>
   <div
     class="ml-24 p-12 bg-blue-100/40 w-7/12 border-l-2 border-blue-300 backdrop-blur-lg"
@@ -18,9 +18,9 @@
     </div>
   </div>
 </template>
-<script lang="ts">
+<!-- <script lang="ts">
 
-</script>
+</script> -->
 <style scoped>
 * {
   font-family: "Geist", sans-serif;
