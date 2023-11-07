@@ -1,12 +1,11 @@
 <template>
   <div
-    class="fixed w-10 right-5 top-0  z-50" :style="{ height }"
-  ></div>
+    class="fixed w-12 right-0 top-0  z-40 " :style="{ height }"
+  ><div class="absolute w-12 top-0 h-1/2 bg-black"></div></div>
 </template>
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
-const height = ref("right 0px");
-
+const height = ref("0vh");
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });
