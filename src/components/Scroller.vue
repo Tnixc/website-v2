@@ -33,5 +33,6 @@ div {
   backdrop-filter: invert(1) brightness(2);
   left: calc(100vw - 20rem);
   transition: all 50ms linear;
+  box-shadow: 3rem 0 8rem 0 rgba(0, 0, 0, 0.2);
 }
 </style>

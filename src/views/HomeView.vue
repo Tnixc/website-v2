@@ -13,22 +13,22 @@
   >
     <a
       @click="scrollToSection('About')"
-      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-violet-800 via-purple-700 to-fuchsia-700 inline-block text-transparent bg-clip-text"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800  inline-block text-transparent bg-clip-text"
       >About</a
     >
     <a
       @click="scrollToSection('Contact')"
-      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-teal-600 via-sky-700 to-indigo-700 inline-block text-transparent bg-clip-text"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800  inline-block text-transparent bg-clip-text"
       >Contact / Links</a
     >
     <a
       @click="scrollToSection('Skills')"
-      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-lime-700 via-green-700 to-emerald-700 inline-block text-transparent bg-clip-text"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800  inline-block text-transparent bg-clip-text"
       >Skills / Tools</a
     >
     <a
       @click="scrollToSection('Projects')"
-      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-rose-500 via-red-600 to-amber-600 inline-block text-transparent bg-clip-text"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800  inline-block text-transparent bg-clip-text"
       >Projects</a
     >
   </div>
