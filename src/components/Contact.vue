@@ -1,7 +1,7 @@
 <template>
   <div id="container" ref="target" class="ml-24 w-7/12 hover:shadow-xl">
     <h1
-      class="mt-24 text-5xl bg-blue-200 border-l-2 border-t-2 border-blue-500"
+      class=" text-5xl bg-blue-200 border-l-2 border-t-2 border-blue-500"
     >
       ## Contact + Links
     </h1>
@@ -24,6 +24,7 @@
         >
           <i class="p-2 scale-125 fa-brands fa-x-twitter"></i>
           <p class="p-2 font-xl">_Tnixc</p>
+          <i class="p-2 scale-125 fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <div
           v-thover="{ borderWidth: 4, scale: 1.2 }"
@@ -41,6 +42,7 @@
         >
           <i class="p-2 scale-125 fa-brands fa-github"></i>
           <p class="p-2 font-xl">Tnixc</p>
+          <i class="p-2 scale-125 fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <div class="flex-grow w-full"></div>
         <div class="p-2 bg-blue-50 flex items-center m-1 relative">

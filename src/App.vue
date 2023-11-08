@@ -48,6 +48,9 @@ body {
   cursor: none;
   -webkit-user-drag: none;
 }
+*::selection {
+  @apply bg-violet-300 text-black
+}
 .tetikus__cursor::after {
   content: "";
   inset: 40%;

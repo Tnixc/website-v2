@@ -34,11 +34,21 @@
   </div>
   <Title />
   <Scroller />
+
+  <div class="h-96"><div class="ml-96 w-1 mt-2 h-full stripe"></div></div>
   <About id="About" />
   <Games />
+  <div style="height: 30rem; margin-left: 32rem">
+    <div class="w-0.5 h-full stripe"></div>
+  </div>
   <a id="Contact"></a>
   <Contact />
-  <a  id="Skills"></a>
+  <div class="h-96">
+    <div
+      class="ml-40 w-50 h-full border-dashed border-4 border-l-emerald-500 border-y-transparent"
+    ></div>
+  </div>
+  <a id="Skills"></a>
   <Skills />
   <div class="h-screen"></div>
   <div class="h-screen"></div>
@@ -113,5 +123,14 @@ div.img {
 }
 .content-l:hover::after {
   @apply w-full;
+}
+.stripe {
+  background: repeating-linear-gradient(
+    to bottom,
+    black,
+    black 15px,
+    transparent 15px,
+    transparent 30px
+  );
 }
 </style>
