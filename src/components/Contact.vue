@@ -1,5 +1,5 @@
 <template>
-  <div id="container" ref="target" class="ml-24 w-7/12 hover:shadow-xl">
+  <div id="container" ref="target" class="ml-24 w-7/12 hover:shadow-md">
     <h1 class="text-5xl bg-sky-200 border-l-2 border-t-2 border-blue-500">
       ## Contact + Links
     </h1>
@@ -7,53 +7,43 @@
       class="p-12 bg-gradient-to-t from-blue-100/40 to-sky-200 border-l-2 border-blue-300 backdrop-blur-lg border-b-zinc-50 border-b-2"
     >
       <div class="flex gap-0.5 flex-wrap">
-        <div
-          v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl"
-        >
+        <div class="p-2 bg-blue-50 flex items-center m-1 hover:shadow-md">
           <i class="p-2 scale-125 fa-brands fa-discord"></i>
           <p class="p-2 font-xl">Tnixc</p>
         </div>
         <a
           v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="li p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl hover:ring-2 ring-blue-500"
+          class="li p-2 bg-blue-50 flex items-center m-1 hover:shadow-md "
           href="https://twitter.com/_Tnixc"
           target="_blank"
         >
           <i class="p-2 scale-125 fa-brands fa-x-twitter"></i>
-          <p class="p-2 font-xl">_Tnixc</p>
+          <p class="p-2 font-xl underline underline-offset-4 decoration-2">_Tnixc</p>
           <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square"></i>
         </a>
-        <div
-          v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl"
-        >
+        <div class="p-2 bg-blue-50 flex items-center m-1 hover:shadow-md">
           <i class="p-2 scale-125 fa-solid fa-envelope"></i>
           <p class="p-2 font-xl">tnixxc@gmail.com</p>
         </div>
 
         <a
           v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="li p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl hover:ring-2 ring-blue-500"
+          class="li p-2 bg-blue-50 flex items-center m-1 hover:shadow-md "
           href="https://github.com/Tnixc"
           target="_blank"
         >
           <i class="p-2 scale-125 fa-brands fa-github"></i>
-          <p class="p-2 font-xl">Tnixc</p>
+          <p class="p-2 font-xl underline underline-offset-4 decoration-2">Tnixc</p>
           <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <div class="flex-grow w-full"></div>
-        <div
-          class="p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl"
-        >
+        <div class="p-2 bg-blue-50 flex items-center m-1 hover:shadow-md">
           <img
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tnixc&layout=compact&theme=catppuccin_latte&bg_color=00000000&hide_border=true"
             alt="A graph showing my most used languages"
           />
         </div>
-        <div
-          class="p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl"
-        >
+        <div class="p-2 bg-blue-50 flex items-center m-1 hover:shadow-md">
           <img
             src="https://github-readme-stats.vercel.app/api?username=Tnixc&show_icons=true&theme=catppuccin_latte&bg_color=00000000&hide_border=true&rank_icon=github"
             alt="A graph showing my github stats"
@@ -107,6 +97,7 @@ const cardTransformOpposite = computed(() => {
 * {
   font-family: "Geist", sans-serif;
   font-variation-settings: "wght" 128;
+  transition: 0.25s linear;
 }
 #container {
   transform: v-bind(cardTransform);
