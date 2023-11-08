@@ -1,8 +1,6 @@
 <template>
   <div id="container" ref="target" class="ml-24 w-7/12 hover:shadow-xl">
-    <h1
-      class=" text-5xl bg-blue-200 border-l-2 border-t-2 border-blue-500"
-    >
+    <h1 class="text-5xl bg-blue-200 border-l-2 border-t-2 border-blue-500">
       ## Contact + Links
     </h1>
     <div
@@ -18,13 +16,13 @@
         </div>
         <a
           v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="li p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl"
+          class="li p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl hover:ring-2"
           href="https://twitter.com/_Tnixc"
           target="_blank"
         >
           <i class="p-2 scale-125 fa-brands fa-x-twitter"></i>
           <p class="p-2 font-xl">_Tnixc</p>
-          <i class="p-2 scale-125 fa-solid fa-arrow-up-right-from-square"></i>
+          <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <div
           v-thover="{ borderWidth: 4, scale: 1.2 }"
@@ -36,22 +34,26 @@
 
         <a
           v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="li p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl"
+          class="li p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl hover:ring-2"
           href="https://github.com/Tnixc"
           target="_blank"
         >
           <i class="p-2 scale-125 fa-brands fa-github"></i>
           <p class="p-2 font-xl">Tnixc</p>
-          <i class="p-2 scale-125 fa-solid fa-arrow-up-right-from-square"></i>
+          <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <div class="flex-grow w-full"></div>
-        <div class="p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl">
+        <div
+          class="p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl"
+        >
           <img
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tnixc&layout=compact&theme=catppuccin_latte&bg_color=00000000&hide_border=true"
             alt="A graph showing my most used languages"
           />
         </div>
-        <div class="p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl">
+        <div
+          class="p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl"
+        >
           <img
             src="https://github-readme-stats.vercel.app/api?username=Tnixc&show_icons=true&theme=catppuccin_latte&bg_color=00000000&hide_border=true&rank_icon=github"
             alt="A graph showing my github stats"
