@@ -904,8 +904,5 @@
       />
     </g>
   </svg>
-
 </template>
-<style>
-
-</style>
+<style></style>

@@ -8,33 +8,35 @@
     </div>
     <Stars class="-z-10 fixed" />
   </div>
-  <div class="flex flex-col h-screen fixed right-12 top-0 p-7 justify-around">
+  <div
+    class="flex flex-col h-screen fixed right-12 top-0 p-7 justify-around backdrop-blur-sm"
+  >
     <a
       @click="scrollToSection('About')"
-      class="content-l text-2xl font-thin w-max text-right"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-violet-800 via-purple-700 to-fuchsia-700 inline-block text-transparent bg-clip-text"
       >About</a
     >
     <a
       @click="scrollToSection('Contact')"
-      class="content-l text-2xl font-thin w-max text-right"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-teal-600 via-sky-700 to-indigo-700 inline-block text-transparent bg-clip-text"
       >Contact / Links</a
     >
     <a
       @click="scrollToSection('Skills')"
-      class="content-l text-2xl font-thin w-max"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-lime-700 via-green-700 to-emerald-700 inline-block text-transparent bg-clip-text"
       >Skills / Tools</a
     >
     <a
       @click="scrollToSection('Projects')"
-      class="content-l text-2xl font-thin w-max text-right"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-rose-500 via-red-600 to-amber-600 inline-block text-transparent bg-clip-text"
       >Projects</a
     >
   </div>
   <Title />
   <About id="About" />
   <Games />
-  <a id="Contact" ></a>
-  <Contact/>
+  <a id="Contact"></a>
+  <Contact />
   <Scroller />
   <div class="h-screen"></div>
   <div class="h-screen"></div>
@@ -104,7 +106,7 @@ div.img {
 .content-l::after {
   transition: 0.4s ease-in-out;
   content: "";
-  @apply w-0 bg-blue-300/50 absolute -z-10 top-1/2 h-1/2 bottom-0 right-0;
+  @apply w-0 bg-zinc-300/50 absolute -z-10 top-1/2 h-1/2 bottom-0 right-0;
 }
 .content-l:hover::after {
   @apply w-full;

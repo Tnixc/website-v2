@@ -1,7 +1,7 @@
 <template>
   <div id="container" ref="target" class="ml-24 w-7/12 hover:shadow-xl">
     <h1
-      class="mt-24 text-5xl bg-blue-200 border-l-2 border-t-2 border-blue-500 transition-all hover:border-l-8"
+      class="mt-24 text-5xl bg-blue-200 border-l-2 border-t-2 border-blue-500 hover:border-l-8 hover:pl-8"
     >
       ## Contact + Links
     </h1>
@@ -103,15 +103,17 @@ const cardTransform = computed(() => {
 .li:hover::after {
   @apply h-1;
 }
-
+h1 {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 #container {
   transform: v-bind(cardTransform);
-  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
-.m-1{
+.m-1 {
   transition: all 0.2s ease-in-out;
 }
-.m-1.m-1:hover{
+.m-1.m-1:hover {
   @apply shadow-xl;
 }
 </style>

@@ -48,7 +48,7 @@ body {
   cursor: none;
   -webkit-user-drag: none;
 }
-.tetikus__cursor::after{
+.tetikus__cursor::after {
   content: "";
   inset: 40%;
   filter: hue-rotate(180deg) !important;

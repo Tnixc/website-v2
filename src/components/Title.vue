@@ -25,7 +25,6 @@
       <div class="box col-span-3 row-span-1"></div>
       <div class="box col-span-1 row-span-2"></div>
       <div class="box col-span-4 row-span-4"></div>
-      
     </div>
 
     <h2 class="text-5xl text-zinc-700">Haiii</h2>
@@ -204,5 +203,4 @@ h1::after {
 .box {
   @apply ring-2;
 }
-
 </style>

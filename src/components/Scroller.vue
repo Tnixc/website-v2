@@ -1,6 +1,7 @@
 <template>
   <div
-    class="border-l-4 border-black fixed w-12 right-0 top-0 z-40 shadow-inner" :style="{ height }"
+    class="border-l-4 border-black fixed w-12 right-0 top-0 z-40 shadow-inner"
+    :style="{ height }"
   ></div>
 </template>
 <script setup lang="ts">
@@ -28,7 +29,7 @@ function handleScroll() {
 }
 </script>
 <style scoped>
-div{
+div {
   backdrop-filter: invert(1) brightness(2);
 }
 </style>
