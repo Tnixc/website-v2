@@ -9,16 +9,39 @@
     <Stars class="-z-10 fixed" />
   </div>
   <div class="flex flex-col h-screen fixed right-12 top-0 p-7 justify-around">
-    <a v-thover="{ scale: 1.2 }" class="content-l text-2xl font-thin w-min" href="#Contact">About</a>
-    <a class="content-l text-2xl font-thin w-min" href="#Contact">Contact</a>
-    <a class="content-l text-2xl font-thin w-min" href="#Skills">Skills</a>
-    <a class="content-l text2xl font-thin w-min" href="#Projects">Projects</a>
+    <a
+      @click="scrollToSection('About')"
+      class="content-l text-2xl font-thin w-max text-right"
+      >About</a
+    >
+    <a
+      @click="scrollToSection('Contact')"
+      class="content-l text-2xl font-thin w-max text-right"
+      >Contact / Links</a
+    >
+    <a
+      @click="scrollToSection('Skills')"
+      class="content-l text-2xl font-thin w-max"
+      >Skills / Tools</a
+    >
+    <a
+      @click="scrollToSection('Projects')"
+      class="content-l text-2xl font-thin w-max text-right"
+      >Projects</a
+    >
   </div>
   <Title />
-  <About id="Contact" />
+  <About id="About" />
   <Games />
-  <Contact id="About" />
+  <a id="Contact" ></a>
+  <Contact/>
   <Scroller />
+  <div class="h-screen"></div>
+  <div class="h-screen"></div>
+  <div class="h-screen"></div>
+  <div class="h-screen"></div>
+  <div class="h-screen"></div>
+  <Footer />
 </template>
 
 <script setup lang="ts">
@@ -30,6 +53,7 @@ import About from "@/components/About.vue";
 import Games from "@/components/Games.vue";
 import Contact from "@/components/Contact.vue";
 
+import Footer from "@/components/Footer.vue";
 
 const backgroundPosition = ref("right 0px");
 
@@ -48,6 +72,19 @@ function handleScroll() {
   const translateY = ((scrollY * 1000) / limit) * 0.58;
   backgroundPosition.value = `right ${-translateY}px`;
 }
+</script>
+<script lang="ts">
+export default {
+  methods: {
+    scrollToSection(sectionId: string) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const offset = element.offsetTop; // 20% from the top
+        window.scrollTo({ top: offset, behavior: "smooth" });
+      }
+    },
+  },
+};
 </script>
 <style scoped>
 #fixed {

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@namchee/tetikus": "^0.4.2",
+    "@vueuse/core": "^10.5.0",
     "@vueuse/motion": "^2.0.0",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
