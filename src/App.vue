@@ -1,6 +1,22 @@
 <template>
-  <!-- <RouterView /> -->
-  <HomeView/>
+  <tetikus
+    :showDefaultCursor="false"
+    :throttleSpeed="1"
+    :borderWidth="2"
+    :size="40"
+    :buttonMap="['left', 'right']"
+    :clickBehavior="{ scale: 0.8 }"
+    :opacity="0.8"
+    :hideOnOut="true"
+    :contentPosition="'bottom'"
+    :lerp="0.7"
+    :defaultTransitionSpeed="200"
+    :defaultEasing="'ease-in-out'"
+    :defaultDelay="300"
+    :invertColor="true"
+    :borderColor="'white'"
+  />
+  <HomeView />
 </template>
 <script lang="ts">
 import HomeView from "@/views/HomeView.vue";
@@ -21,7 +37,7 @@ export default {
   src: url("https://pham.codes/d/GeistVF.woff2") format("woff2");
 }
 
-body{
+body {
   font-family: "Geist", sans-serif;
 }
 *::-webkit-scrollbar {
@@ -29,6 +45,13 @@ body{
 }
 * {
   scroll-behavior: smooth;
+  cursor: none;
+  -webkit-user-drag: none;
 }
-
+.tetikus__cursor::after{
+  content: "";
+  inset: 40%;
+  filter: hue-rotate(180deg) !important;
+  @apply rounded-full bg-white absolute shadow-xl;
+}
 </style>

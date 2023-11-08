@@ -9,9 +9,9 @@
     <Stars class="-z-10 fixed" />
   </div>
   <div class="flex flex-col h-screen fixed right-12 top-0 p-7 justify-around">
-    <a class="content-l text-2xl font-thin w-min" href="#Contact">About</a>
+    <a v-thover="{ scale: 1.2 }" class="content-l text-2xl font-thin w-min" href="#Contact">About</a>
     <a class="content-l text-2xl font-thin w-min" href="#Contact">Contact</a>
-    <a class="content-l text-2xl font-thin w-min" href="#Skills" >Skills</a>
+    <a class="content-l text-2xl font-thin w-min" href="#Skills">Skills</a>
     <a class="content-l text2xl font-thin w-min" href="#Projects">Projects</a>
   </div>
   <Title />
@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted } from "vue";
 import Scroller from "@/components/Scroller.vue";
 import Stars from "@/components/Stars.vue";
 import Title from "@/components/Title.vue";
@@ -30,16 +30,12 @@ import About from "@/components/About.vue";
 import Games from "@/components/Games.vue";
 import Contact from "@/components/Contact.vue";
 
+
 const backgroundPosition = ref("right 0px");
 
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });
-
-onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll);
-});
-
 function handleScroll() {
   const scrollY = window.scrollY;
   const limit = Math.max(
@@ -65,16 +61,15 @@ div.img {
   background-repeat: no-repeat;
   background-size: 1000px;
 }
-.content-l{
+.content-l {
   position: relative;
 }
-.content-l::after{
+.content-l::after {
   transition: 0.4s ease-in-out;
   content: "";
-  @apply w-0 bg-blue-300/50 absolute -z-10 top-1/2 h-1/2 bottom-0 right-0 ;
+  @apply w-0 bg-blue-300/50 absolute -z-10 top-1/2 h-1/2 bottom-0 right-0;
 }
-.content-l:hover::after{
+.content-l:hover::after {
   @apply w-full;
 }
-
 </style>
