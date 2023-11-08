@@ -35,22 +35,32 @@
   <Title />
   <Scroller />
 
-  <div class="h-40"><div class="ml-96 w-0.5 h-full stripe translate-x-4"></div></div>
-  <a href="" id="About"></a>
-  <div class="h-40"><div class="ml-96 w-0.5 h-full stripe translate-x-4"></div></div>
-  <About/>
-  <Games />
-  <div class="h-40"><div class="ml-96 w-0.5 h-full stripe translate-x-40"></div></div>
-  <a id="Contact"></a>
-  <div class="h-40"><div class="ml-96 w-0.5 h-full stripe translate-x-40"></div></div>
-
-  <Contact />
-  <div class="h-96">
-    <div
-      class="ml-40 w-50 h-full border-dashed border-4 border-l-emerald-500 border-y-transparent"
-    ></div>
+  <div class="h-40">
+    <div class="ml-96 w-0.5 h-full stripe translate-x-4"></div>
   </div>
+  <a href="" id="About"></a>
+  <div class="h-40">
+    <div class="ml-96 w-0.5 h-full stripe translate-x-4"></div>
+  </div>
+  <About />
+  <Games />
+  <div class="h-40">
+    <div class="ml-96 w-0.5 h-full stripe translate-x-40"></div>
+  </div>
+  <a id="Contact"></a>
+  <div class="h-40">
+    <div class="ml-96 w-0.5 h-full stripe translate-x-40"></div>
+  </div>
+  <Contact />
+  <div class="h-60">
+    <div class="ml-96 w-0.5 h-full stripe translate-x-80"></div>
+  </div>
+
   <a id="Skills"></a>
+  <div class="h-60">
+    <div class="ml-96 w-0.5 h-full stripe translate-x-80"></div>
+  </div>
+
   <Skills />
   <div class="h-screen"></div>
   <div class="h-screen"></div>
