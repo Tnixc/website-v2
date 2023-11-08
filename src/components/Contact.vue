@@ -72,13 +72,6 @@ const { elementX, elementY, isOutside, elementHeight, elementWidth } =
   useMouseInElement(target);
 
 const cardTransform = computed(() => {
-  // const x = elementX.value;
-  // const y = elementY.value;
-  // const height = elementHeight.value;
-  // const width = elementWidth.value;
-  // const xPercent = (x / width) * 100;
-  // const yPercent = (y / height) * 100;
-  // return `perspective(1000px) rotateX(${-yPercent}deg) rotateY(${xPercent}deg)`;
   const MAX_ROTATION = 5;
   const rX = (
     MAX_ROTATION / 2 -
