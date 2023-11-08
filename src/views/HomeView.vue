@@ -36,12 +36,12 @@
   <Scroller />
 
   <div class="h-96"><div class="ml-96 w-1 mt-2 h-full stripe"></div></div>
-  <About id="About" />
+  <About id="About" offsetTop="100"/>
   <Games />
   <div style="height: 30rem; margin-left: 32rem">
     <div class="w-0.5 h-full stripe"></div>
   </div>
-  <a id="Contact"></a>
+  <a id="Contact" offsetTop="50"></a>
   <Contact />
   <div class="h-96">
     <div
@@ -94,7 +94,7 @@ export default {
     scrollToSection(sectionId: string) {
       const element = document.getElementById(sectionId);
       if (element) {
-        const offset = element.offsetTop; // 20% from the top
+        const offset = element.offsetTop;
         window.scrollTo({ top: offset, behavior: "smooth" });
       }
     },
