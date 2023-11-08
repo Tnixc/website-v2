@@ -9,7 +9,7 @@
     :opacity="0.8"
     :hideOnOut="true"
     :contentPosition="'bottom'"
-    :lerp="0.7"
+    :lerp="0.3"
     :defaultTransitionSpeed="200"
     :defaultEasing="'ease-in-out'"
     :defaultDelay="300"

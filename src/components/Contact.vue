@@ -1,7 +1,7 @@
 <template>
   <div id="container" ref="target" class="ml-24 w-7/12 hover:shadow-xl">
     <h1
-      class="mt-24 text-5xl bg-blue-200 border-l-2 border-t-2 border-blue-500 hover:border-l-8 hover:pl-8"
+      class="mt-24 text-5xl bg-blue-200 border-l-2 border-t-2 border-blue-500"
     >
       ## Contact + Links
     </h1>
@@ -42,6 +42,7 @@
           <i class="p-2 scale-125 fa-brands fa-github"></i>
           <p class="p-2 font-xl">Tnixc</p>
         </a>
+        <div class="flex-grow w-full"></div>
         <div class="p-2 bg-blue-50 flex items-center m-1 relative">
           <img
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tnixc&layout=compact&theme=catppuccin_latte&bg_color=00000000&hide_border=true"
@@ -74,7 +75,7 @@ const cardTransform = computed(() => {
   // const xPercent = (x / width) * 100;
   // const yPercent = (y / height) * 100;
   // return `perspective(1000px) rotateX(${-yPercent}deg) rotateY(${xPercent}deg)`;
-  const MAX_ROTATION = 6;
+  const MAX_ROTATION = 5;
   const rX = (
     MAX_ROTATION / 2 -
     (elementY.value / elementHeight.value) * MAX_ROTATION
@@ -87,24 +88,28 @@ const cardTransform = computed(() => {
     ? ""
     : `perspective(${elementWidth.value}px) rotateX(${rX}deg) rotateY(${rY}deg)`;
 });
+const cardTransformOpposite = computed(() => {
+  const MAX_ROTATION = 5;
+  const rX = (
+    MAX_ROTATION / 2 -
+    (elementY.value / elementHeight.value) * MAX_ROTATION
+  ).toFixed(2);
+  const rY = (
+    MAX_ROTATION / 2 -
+    (elementX.value / elementWidth.value) * MAX_ROTATION
+  ).toFixed(2);
+  return isOutside.value
+    ? ""
+    : `perspective(${
+        elementWidth.value
+      }px) rotateX(${-rX}deg) rotateY(${-rY}deg)`;
+});
+// })
 </script>
 <style scoped>
 * {
   font-family: "Geist", sans-serif;
   font-variation-settings: "wght" 128;
-}
-.li {
-  @apply relative;
-}
-.li::after {
-  @apply absolute h-0 bottom-0 left-0 right-0 bg-blue-600 transition-all;
-  content: "";
-}
-.li:hover::after {
-  @apply h-1;
-}
-h1 {
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 #container {
   transform: v-bind(cardTransform);
@@ -115,5 +120,9 @@ h1 {
 }
 .m-1.m-1:hover {
   @apply shadow-xl;
+}
+#container > div > div {
+  transform: v-bind(cardTransformOpposite);
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
 </style>
