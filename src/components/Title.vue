@@ -1,32 +1,4 @@
 <template>
-  <div
-    class="w-11/12 lg:w-1/2 h-screen flex flex-col justify-center p-12 bg-zinc-100/50 backdrop-blur-md border-r-2 border-b-2"
-  >
-    <div class="box-container opacity-20">
-      <div class="box row-span-2 col-span-2"></div>
-      <div class="box col-span-4 row-span-1"></div>
-      <div class="box col-span-3 row-span-3"></div>
-      <div class="box col-span-1 row-span-3"></div>
-      <div class="box col-span-3 row-span-2"></div>
-      <div class="box col-span-4 row-span-4"></div>
-      <div class="box col-span-3 row-span-3"></div>
-      <div class="box col-span-1 row-span-4"></div>
-      <div class="box row-span-3 col-span-3"></div>
-      <div class="box col-span-1 row-span-2"></div>
-      <div class="box col-span-2 row-span-4"></div>
-      <div class="box col-span-4 row-span-1"></div>
-      <div class="box col-span-4 row-span-3"></div>
-      <div class="box col-span-2 row-span-2"></div>
-      <div class="box col-span-4 row-span-3"></div>
-      <div class="box col-span-3 row-span-1"></div>
-      <div class="box col-span-2 row-span-4"></div>
-      <div class="box col-span-2 row-span-2"></div>
-      <div class="box col-span-1 row-span-3"></div>
-      <div class="box col-span-3 row-span-1"></div>
-      <div class="box col-span-1 row-span-2"></div>
-      <div class="box col-span-4 row-span-4"></div>
-    </div>
-
     <h2 class="text-5xl text-zinc-700">Haiii</h2>
     <h1 class="text-9xl relative">I'm Tnixc</h1>
     <h2 class="text-3xl">
@@ -34,7 +6,6 @@
       <span class="underscore" :class="{ flash: showUnderscore }">_</span>
     </h2>
     <p class="absolute bottom-10 left-1/2 -translate-x-1/2">scroll to begin</p>
-  </div>
 </template>
 
 <script lang="ts">
