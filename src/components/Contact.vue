@@ -108,4 +108,10 @@ const cardTransform = computed(() => {
   transform: v-bind(cardTransform);
   transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.m-1{
+  transition: all 0.2s ease-in-out;
+}
+.m-1.m-1:hover{
+  @apply shadow-xl;
+}
 </style>
