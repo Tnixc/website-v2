@@ -55,12 +55,13 @@
   <div class="h-60">
     <div class="ml-96 w-0.5 h-full stripe translate-x-80"></div>
   </div>
-
   <a id="Skills"></a>
   <div class="h-60">
     <div class="ml-96 w-0.5 h-full stripe translate-x-80"></div>
   </div>
-
+  <div class="w-full flex justify-center items-center">
+    <div class="h-0.5 bg-black max-w-3xl w-full"></div>
+  </div>
   <Skills />
   <div class="h-screen"></div>
   <div class="h-screen"></div>

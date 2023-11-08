@@ -29,7 +29,7 @@
         },
       }"
     >
-      <div class="backdrop-blur-lg bg-zinc-50/50 border-4 p-12 shadow-xl">
+      <div class="backdrop-blur-lg bg-gradient-to-t from-zinc-300/40 to-zinc-50 border-4 p-12 shadow-xl">
         <div class="flex gap-2 text-lg flex-wrap backdrop-blur-sg">
           <span>
             <span>{{ TimeDiff }}</span> seconds old

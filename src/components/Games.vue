@@ -3,7 +3,7 @@
     ## Games
   </h1>
   <div
-    class="border-l-2 ml-48 p-12 bg-violet-100/40 w-8/12 backdrop-blur-lg border-violet-300 border-b-zinc-50 border-b-2"
+    class="border-l-2 ml-48 p-12 bg-gradient-to-t from-indigo-300/30 to-violet-200 w-8/12 backdrop-blur-lg border-violet-300 border-b-zinc-50 border-b-2"
   >
     <div class="flex gap-2 flex-wrap">
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">

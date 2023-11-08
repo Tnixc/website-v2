@@ -1,10 +1,10 @@
 <template>
   <div id="container" ref="target" class="ml-24 w-7/12 hover:shadow-xl">
-    <h1 class="text-5xl bg-blue-200 border-l-2 border-t-2 border-blue-500">
+    <h1 class="text-5xl bg-sky-200 border-l-2 border-t-2 border-blue-500">
       ## Contact + Links
     </h1>
     <div
-      class="p-12 bg-blue-100/40 border-l-2 border-blue-300 backdrop-blur-lg border-b-zinc-50 border-b-2"
+      class="p-12 bg-gradient-to-t from-blue-100/40 to-sky-200 border-l-2 border-blue-300 backdrop-blur-lg border-b-zinc-50 border-b-2"
     >
       <div class="flex gap-0.5 flex-wrap">
         <div
@@ -16,7 +16,7 @@
         </div>
         <a
           v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="li p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl hover:ring-2"
+          class="li p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl hover:ring-2 ring-blue-500"
           href="https://twitter.com/_Tnixc"
           target="_blank"
         >
@@ -34,7 +34,7 @@
 
         <a
           v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="li p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl hover:ring-2"
+          class="li p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl hover:ring-2 ring-blue-500"
           href="https://github.com/Tnixc"
           target="_blank"
         >
