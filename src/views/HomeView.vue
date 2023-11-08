@@ -6,7 +6,7 @@
         :style="{ backgroundPosition: backgroundPosition }"
       ></div>
     </div>
-    <Stars class="-z-10 fixed" />
+    <BG class="-z-10 fixed" />
   </div>
   <div
     class="flex flex-col h-screen fixed right-0 top-0 p-7 justify-around backdrop-blur-sm"
@@ -33,11 +33,13 @@
     >
   </div>
   <Title />
+  <Scroller />
   <About id="About" />
   <Games />
   <a id="Contact"></a>
   <Contact />
-  <Scroller />
+  <a  id="Skills"></a>
+  <Skills />
   <div class="h-screen"></div>
   <div class="h-screen"></div>
   <div class="h-screen"></div>
@@ -49,11 +51,12 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import Scroller from "@/components/Scroller.vue";
-import Stars from "@/components/Stars.vue";
+import BG from "@/components/BG.vue";
 import Title from "@/components/Title.vue";
 import About from "@/components/About.vue";
 import Games from "@/components/Games.vue";
 import Contact from "@/components/Contact.vue";
+import Skills from "@/components/Skills.vue";
 
 import Footer from "@/components/Footer.vue";
 
