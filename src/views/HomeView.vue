@@ -9,7 +9,7 @@
     <Stars class="-z-10 fixed" />
   </div>
   <div
-    class="flex flex-col h-screen fixed right-12 top-0 p-7 justify-around backdrop-blur-sm"
+    class="flex flex-col h-screen fixed right-0 top-0 p-7 justify-around backdrop-blur-sm"
   >
     <a
       @click="scrollToSection('About')"

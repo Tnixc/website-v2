@@ -1,6 +1,6 @@
 <template>
   <div
-    class="border-l-4 border-black fixed w-12 right-0 top-0 z-40 shadow-inner"
+    class="border-l-4 border-black fixed right-60 top-0 -z-10 shadow-inner"
     :style="{ height }"
   ></div>
 </template>
@@ -31,5 +31,6 @@ function handleScroll() {
 <style scoped>
 div {
   backdrop-filter: invert(1) brightness(2);
+  left: calc(100vw - 20rem);
 }
 </style>
