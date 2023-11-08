@@ -35,13 +35,15 @@
   <Title />
   <Scroller />
 
-  <div class="h-96"><div class="ml-96 w-1 mt-2 h-full stripe"></div></div>
-  <About id="About" offsetTop="100"/>
+  <div class="h-40"><div class="ml-96 w-0.5 h-full stripe translate-x-4"></div></div>
+  <a href="" id="About"></a>
+  <div class="h-40"><div class="ml-96 w-0.5 h-full stripe translate-x-4"></div></div>
+  <About/>
   <Games />
-  <div style="height: 30rem; margin-left: 32rem">
-    <div class="w-0.5 h-full stripe"></div>
-  </div>
-  <a id="Contact" offsetTop="50"></a>
+  <div class="h-40"><div class="ml-96 w-0.5 h-full stripe translate-x-40"></div></div>
+  <a id="Contact"></a>
+  <div class="h-40"><div class="ml-96 w-0.5 h-full stripe translate-x-40"></div></div>
+
   <Contact />
   <div class="h-96">
     <div

@@ -11,14 +11,14 @@
       <div class="flex gap-0.5 flex-wrap">
         <div
           v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="p-2 bg-blue-50 flex items-center m-1 relative"
+          class="p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl"
         >
           <i class="p-2 scale-125 fa-brands fa-discord"></i>
           <p class="p-2 font-xl">Tnixc</p>
         </div>
         <a
           v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="li p-2 bg-blue-50 flex items-center m-1 relative"
+          class="li p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl"
           href="https://twitter.com/_Tnixc"
           target="_blank"
         >
@@ -28,7 +28,7 @@
         </a>
         <div
           v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="p-2 bg-blue-50 flex items-center m-1 relative"
+          class="p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl"
         >
           <i class="p-2 scale-125 fa-solid fa-envelope"></i>
           <p class="p-2 font-xl">tnixxc@gmail.com</p>
@@ -36,7 +36,7 @@
 
         <a
           v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="li p-2 bg-blue-50 flex items-center m-1 relative"
+          class="li p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl"
           href="https://github.com/Tnixc"
           target="_blank"
         >
@@ -45,13 +45,13 @@
           <i class="p-2 scale-125 fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <div class="flex-grow w-full"></div>
-        <div class="p-2 bg-blue-50 flex items-center m-1 relative">
+        <div class="p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl">
           <img
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tnixc&layout=compact&theme=catppuccin_latte&bg_color=00000000&hide_border=true"
             alt="A graph showing my most used languages"
           />
         </div>
-        <div class="p-2 bg-blue-50 flex items-center m-1 relative">
+        <div class="p-2 bg-blue-50 flex items-center m-1 transition-all hover:shadow-xl">
           <img
             src="https://github-readme-stats.vercel.app/api?username=Tnixc&show_icons=true&theme=catppuccin_latte&bg_color=00000000&hide_border=true&rank_icon=github"
             alt="A graph showing my github stats"
@@ -116,12 +116,6 @@ const cardTransformOpposite = computed(() => {
 #container {
   transform: v-bind(cardTransform);
   transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1);
-}
-.m-1 {
-  transition: all 0.2s ease-in-out;
-}
-.m-1.m-1:hover {
-  @apply shadow-xl;
 }
 #container > div > div {
   transform: v-bind(cardTransformOpposite);

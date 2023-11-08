@@ -32,5 +32,6 @@ function handleScroll() {
 div {
   backdrop-filter: invert(1) brightness(2);
   left: calc(100vw - 20rem);
+  transition: all 50ms linear;
 }
 </style>
