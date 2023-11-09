@@ -29,17 +29,19 @@
         },
       }"
     >
-      <div class="backdrop-blur-lg bg-gradient-to-t from-zinc-300/40 to-zinc-50 border-4 p-12 shadow-xl">
+      <div
+        class="backdrop-blur-lg bg-gradient-to-t from-zinc-300/40 to-zinc-50 border-4 p-12 shadow-xl"
+      >
         <div class="flex gap-2 text-lg flex-wrap backdrop-blur-sg">
           <span>
             <span>{{ TimeDiff }}</span> seconds old
           </span>
           <span>•</span>
-          <span id="pronouns" class="relative">Pronouns: he/him</span>
+          <span>Pronouns: he/him</span>
           <span>•</span>
           <span>Time Zone: <span> Eastern Standard Time </span></span>
           <span>•</span>
-          <span id="flags" class="relative"
+          <span
             ><img
               src="https://em-content.zobj.net/source/twitter/376/flag-hong-kong-sar-china_1f1ed-1f1f0.png"
               alt=""
@@ -55,7 +57,8 @@
           anime, and doing 2D and 3D art. I started webdev around 2022, but
           honestly time has been blur since 2020 so I'm not sure.
           <br /><br />I like trains and bikes(a huge fan of dutch urban design),
-          public transit, and open source. I also like walking in IKEA and hiking :3.
+          public transit, and open source. I also like walking in IKEA and
+          hiking :3.
         </p>
       </div>
     </div>
@@ -94,19 +97,5 @@ h1:hover {
 }
 p {
   font-family: "Inter", sans-serif;
-}
-#pronouns::after {
-  position: absolute;
-  inset: 0;
-  content: "";
-  background-color: #c6b3ff50;
-  z-index: -1;
-}
-#flags::after {
-  position: absolute;
-  inset: 0;
-  content: "";
-  background-color: #506aec50;
-  z-index: -1;
 }
 </style>

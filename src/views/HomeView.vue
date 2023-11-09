@@ -32,35 +32,34 @@
       >Projects</a
     >
   </div>
-  <Title />
   <Scroller />
-
+  <Title />
   <div class="h-40">
-    <div class="ml-96 w-0.5 h-full stripe translate-x-4"></div>
+    <div class="ml-96 w-0.5 h-full striped translate-x-4"></div>
   </div>
   <a href="" id="About"></a>
   <div class="h-40">
-    <div class="ml-96 w-0.5 h-full stripe translate-x-4"></div>
+    <div class="ml-96 w-0.5 h-full striped translate-x-4"></div>
   </div>
   <About />
   <Games />
   <div class="h-40">
-    <div class="ml-96 w-0.5 h-full stripe translate-x-40"></div>
+    <div class="ml-96 w-0.5 h-full striped translate-x-40"></div>
   </div>
   <a id="Contact"></a>
   <div class="h-40">
-    <div class="ml-96 w-0.5 h-full stripe translate-x-40"></div>
+    <div class="ml-96 w-0.5 h-full striped translate-x-40"></div>
   </div>
   <Contact />
   <div class="h-60">
-    <div class="ml-96 w-0.5 h-full stripe translate-x-80"></div>
+    <div class="ml-96 w-0.5 h-full striped translate-x-80"></div>
   </div>
   <a id="Skills"></a>
   <div class="h-60">
-    <div class="ml-96 w-0.5 h-full stripe translate-x-80"></div>
+    <div class="ml-96 w-0.5 h-full striped translate-x-80 "></div>
   </div>
   <div class="w-full flex justify-center items-center">
-    <div class="h-0.5 bg-black max-w-3xl w-full"></div>
+    <div class="h-2  max-w-3xl w-full backdrop-invert backdrop-saturate-200 backdrop-hue-rotate-180"></div>
   </div>
   <Skills />
   <div class="h-screen"></div>
@@ -137,7 +136,7 @@ div.img {
 .content-l:hover::after {
   @apply w-full;
 }
-.stripe {
+.striped {
   background: repeating-linear-gradient(
     to bottom,
     black,
