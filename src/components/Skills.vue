@@ -14,7 +14,7 @@
     Gonna learn how to do SSR one day but that day is not today.
   </p>
   <div class="pl-40">
-    <h2 class="text-4xl pt-10 pl-10">## Languages</h2>
+    <h2 class="text-4xl pt-10 pl-8 ">## Languages</h2>
     <div id="cards" class="p-20 pt-2">
       <div class="card">
         <div class="card-content">
@@ -155,11 +155,11 @@
       </div>
     </div>
     <h2 class="text-4xl pt-10 pl-10">## Frameworks / Libraries</h2>
-    <div class="flex flex-wrap max-w-7xl">
+    <div class="flex flex-wrap max-w-7xl p-2 gap-2 bg-zinc-200 w-fit m-1">
       <VueCard />
       <TailwindCard />
-      <div class="bg-white p-2 text-xl">I also tried out three.js as you can see in the rotating models above</div>
     </div>
+    <div class="bg-white p-2 text-xl w-fit m-1">I also tried out three.js as you can see in the rotating models above</div>
     <h2>## Tools / Apps</h2>
 
   </div>
@@ -206,7 +206,7 @@ export default {
   @apply opacity-100;
 }
 .card {
-  @apply flex h-48 flex-col relative w-80 hover:before:opacity-100 before:z-[3] after:z-[1] hover:shadow-lg transition-all duration-500 backdrop-blur-sm;
+  @apply flex h-48 flex-col relative w-96 hover:before:opacity-100 before:z-[3] after:z-[1] hover:shadow-lg transition-all duration-500 backdrop-blur-sm;
 }
 .card::before,
 .card::after {

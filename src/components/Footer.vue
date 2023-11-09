@@ -51,7 +51,7 @@ export default {
   mounted() {
     async function update(this: any) {
       const data = await fetch(
-        "https://api.github.com/repos/Tnixc/elemental/branches/main"
+        "https://api.github.com/repos/Tnixc/website-v2/branches/main"
       );
       const json = await data.json();
       const x = json.commit.sha;
@@ -70,7 +70,7 @@ export default {
     update.call(this);
     async function d(this: any) {
       const data = await fetch(
-        "https://api.github.com/repos/Tnixc/elemental/branches/main"
+        "https://api.github.com/repos/Tnixc/website-v2/branches/main"
       );
       const json = await data.json();
       const x = json.commit.commit.author.date;

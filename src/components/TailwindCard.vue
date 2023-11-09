@@ -6,17 +6,17 @@
   >
     <div class="bg-blue-200/5 relative">
       <div
-        class="aspect-square bg-gradient-to-r from-teal-200/50 to-blue-400/40"
+        class="aspect-square bg-teal-400/50"
       >
         <div ref="container"></div>
         <div
-          class="absolute inset-10 bg-blue-500/80 -z-10 rounded-full blur-xl"
+          class="absolute inset-10 bg-blue-500 -z-10 rounded-full blur-xl"
         ></div>
       </div>
     </div>
-    <div class="p-2 bg-blue-400/40">
-      <h3 class="text-2xl">Tailwind CSS</h3>
-      <p class="">
+    <div class="p-4 bg-blue-400/50">
+      <h3 class="text-3xl">Tailwind CSS</h3>
+      <p class="text-teal-900">
         The objectively best way to write styles. <br />
         I'm gonna use it everywhere.
       </p>
