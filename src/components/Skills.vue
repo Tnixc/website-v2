@@ -1,21 +1,31 @@
 <template>
-  <div class="text-9xl pl-40">
+  <div class="text-8xl lg:text-9xl lg:pl-40" v-motion
+  :initial="{ opacity: 0, y: 100 }"
+  :visibleOnce="{
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'keyframes',
+      ease: 'ease-in-out',
+      delay: 500,
+    },
+  }">
     <h1
-      class="bg-indigo-300/20 backdrop-blur-sm h-30 w-fit translate-y-4 translate-x-1"
+      class="bg-indigo-300/20 backdrop-blur-sm h-30 w-fit translate-y-3 translate-x-1"
     >
       # Skills
     </h1>
   </div>
   <p
-    class="text-lg bg-gradient-to-t from-slate-400/20 to-slate-50/50 p-12 max-w-5xl border-zinc-100 border ml-40"
+    class="backdrop-blur-md lg:backdrop-blur-none text-lg bg-gradient-to-t from-slate-400/20 to-slate-50/50 p-12 max-w-5xl border-zinc-100 border lg:ml-40"
   >
     I mainly do UI/UX design and Front-end development, but I would like to
     learn more about how js frameworks and web technologies work unde the hood.
     Gonna learn how to do SSR one day but that day is not today.
   </p>
-  <div class="pl-40">
-    <h2 class="text-4xl pt-10 pl-8 ">## Languages</h2>
-    <div id="cards" class="p-20 pt-2">
+  <div class="lg:pl-40 pl-2">
+    <h2 class="text-4xl pt-10 pl-8 backdrop-invert text-zinc-50 backdrop-saturate-0 backdrop-brightness-[2.4] max-w-4xl">## Languages</h2>
+    <div id="cards" class="lg:p-20 pt-2">
       <div class="card">
         <div class="card-content">
           <div class="h-full flex items-center">
@@ -154,7 +164,7 @@
         </div>
       </div>
     </div>
-    <h2 class="text-4xl pt-10 pl-10">## Frameworks / Libraries</h2>
+    <h2 class="text-4xl pt-10 pl-10 backdrop-invert text-zinc-50 backdrop-saturate-0 backdrop-brightness-[2.4] max-w-4xl">## Frameworks / Libraries</h2>
     <div class="flex flex-wrap max-w-7xl p-2 gap-2 bg-zinc-200 w-fit m-1">
       <VueCard />
       <TailwindCard />

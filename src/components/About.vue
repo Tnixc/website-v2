@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="lg:pl-24">
     <div
       class="p-1 bg-zinc-100/60 w-fit"
       v-motion

@@ -4,7 +4,7 @@
       ## Contact + Links
     </h1>
     <div
-      class="p-12 bg-gradient-to-t from-blue-100/40 to-sky-200 border-l-2 border-blue-300 border-b-zinc-50 border-b-2"
+      class="lg:p-12 p-4 bg-gradient-to-t from-blue-100/40 to-sky-200 border-l-2 border-blue-300 border-b-zinc-50 border-b-2"
     >
       <div class="flex gap-0.5 flex-wrap">
         <div class="p-2 bg-blue-50 flex items-center m-1 hover:shadow-md">
