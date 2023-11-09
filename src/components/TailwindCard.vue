@@ -6,7 +6,7 @@
   >
     <div class="bg-blue-200/5 relative">
       <div
-        class="aspect-square bg-gradient-to-r from-lime-200/10 to-blue-400/20"
+        class="aspect-square bg-gradient-to-r from-teal-200/50 to-blue-400/40"
       >
         <div ref="container"></div>
         <div
@@ -14,7 +14,7 @@
         ></div>
       </div>
     </div>
-    <div class="p-2 bg-blue-400/20">
+    <div class="p-2 bg-blue-400/40">
       <h3 class="text-2xl">Tailwind CSS</h3>
       <p class="">
         The objectively best way to write styles. <br />

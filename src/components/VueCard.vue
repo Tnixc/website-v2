@@ -15,8 +15,8 @@
       </div>
     </div>
     <div class="p-2 bg-green-400/20">
-      <h3 class="text-2xl">VueJS</h3>
-      <p class="">
+      <h3 class="text-3xl">VueJS</h3>
+      <p class="text-green-900">
         I've only ever tried Vue, but I'm loving it,<br />
         so probably gonna stick with it.
       </p>
