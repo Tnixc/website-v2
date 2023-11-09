@@ -1,5 +1,5 @@
 <template>
-  <div id="container" ref="target" class="ml-24 w-7/12 hover:shadow-md">
+  <div id="container" ref="target" class="lg:ml-24 lg:w-7/12 hover:shadow-md">
     <h1 class="text-5xl bg-sky-200 border-l-2 border-t-2 border-blue-500">
       ## Contact + Links
     </h1>
