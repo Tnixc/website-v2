@@ -25,6 +25,7 @@
 <script lang="js">
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader";
+
 export default {
   data() {
     return {
