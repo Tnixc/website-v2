@@ -18,7 +18,7 @@
           target="_blank"
         >
           <i class="p-2 scale-125 fa-brands fa-x-twitter"></i>
-          <p class="p-2 font-xl underline underline-offset-4 decoration-2">
+          <p class="p-2 font-xl underline underline-offset-4 decoration-2 decoration-blue-500">
             _Tnixc
           </p>
           <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square"></i>
@@ -35,7 +35,7 @@
           target="_blank"
         >
           <i class="p-2 scale-125 fa-brands fa-github"></i>
-          <p class="p-2 font-xl underline underline-offset-4 decoration-2">
+          <p class="p-2 font-xl underline underline-offset-4 decoration-2 decoration-blue-500">
             Tnixc
           </p>
           <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square"></i>

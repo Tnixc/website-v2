@@ -57,7 +57,7 @@
           anime, and doing 2D and 3D art. I started webdev around 2022, but
           honestly time has been blur since 2020 so I'm not sure.
           <br /><br />I like trains and bikes(a huge fan of dutch urban design),
-          public transit, and open source. I also like walking in IKEA and
+          public transit, typography, and open source. I also like chilling in IKEA and
           hiking :3.
         </p>
       </div>
