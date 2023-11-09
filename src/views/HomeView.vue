@@ -9,7 +9,7 @@
     <BG class="-z-10 fixed" />
   </div>
   <div
-    class="flex flex-col h-screen fixed right-0 top-0 p-7 justify-around backdrop-blur-sm"
+    class="flex flex-col h-screen fixed right-0 top-0 p-7 justify-around"
   >
     <a
       @click="scrollToSection('About')"
@@ -60,7 +60,7 @@
   </div>
   <div class="w-full flex justify-center items-center">
     <div
-      class="h-2 max-w-3xl w-full backdrop-invert backdrop-saturate-200 backdrop-hue-rotate-180 backdrop-blur-sm"
+      class="h-2 max-w-3xl w-full backdrop-invert backdrop-saturate-200 backdrop-hue-rotate-180 "
     ></div>
   </div>
   <Skills />

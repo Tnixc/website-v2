@@ -7,7 +7,7 @@
     </h1>
   </div>
   <p
-    class="text-lg bg-gradient-to-t from-slate-400/20 to-slate-50/50 backdrop-blur-lg p-12 max-w-5xl border-zinc-100 border ml-40"
+    class="text-lg bg-gradient-to-t from-slate-400/20 to-slate-50/50 p-12 max-w-5xl border-zinc-100 border ml-40"
   >
     I mainly do UI/UX design and Front-end development, but I would like to
     learn more about how js frameworks and web technologies work unde the hood.
