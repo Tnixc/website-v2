@@ -8,23 +8,69 @@
     </div>
     <BG class="-z-10 fixed" />
   </div>
-  <div class="flex-col h-screen fixed right-0 top-0 p-7 justify-around hidden lg:flex">
+  <div
+    class="flex-col h-screen fixed right-0 top-0 p-7 justify-around hidden lg:flex"
+  >
     <a
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :visibleOnce="{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: 'keyframes',
+          ease: 'ease-in-out',
+          delay: 200,
+        },
+      }"
       @click="scrollToSection('About')"
       class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
       >About</a
     >
     <a
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :visibleOnce="{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: 'keyframes',
+          ease: 'ease-in-out',
+          delay: 400,
+        },
+      }"
       @click="scrollToSection('Contact')"
       class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
       >Contact / Links</a
     >
     <a
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :visibleOnce="{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: 'keyframes',
+          ease: 'ease-in-out',
+          delay: 600,
+        },
+      }"
       @click="scrollToSection('Skills')"
       class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
       >Skills / Tools</a
     >
     <a
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :visibleOnce="{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: 'keyframes',
+          ease: 'ease-in-out',
+          delay: 800,
+        },
+      }"
       @click="scrollToSection('Projects')"
       class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
       >Projects</a
@@ -48,7 +94,18 @@
   <div class="h-40">
     <div class="ml-32 lg:ml-96 w-0.5 h-full striped translate-x-40"></div>
   </div>
-  <Contact />
+  <Contact
+    v-motion
+    :initial="{ opacity: 0, y: 100 }"
+    :visibleOnce="{
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: 'keyframes',
+        ease: 'ease-in-out',
+      },
+    }"
+  />
   <div class="h-60">
     <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-80"></div>
   </div>
