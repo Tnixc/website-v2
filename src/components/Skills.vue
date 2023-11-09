@@ -163,7 +163,7 @@
       >
     <h2>## Tools / Apps</h2>
     <div class="flex flex-wrap max-w-7xl">
-      <Three />
+      <VueCard />
       <div class="max-w-lg flex-grow h-20 bg-blue-300">
         
       </div>
@@ -173,10 +173,10 @@
 </template>
 <script lang="ts">
 //@ts-ignore
-import Three from "@/components/Three.vue";
+import VueCard from "@/components/VueCard.vue";
 export default {
   components: {
-    Three,
+    VueCard,
   },
   mounted() {
     document.getElementById("cards")!.onmousemove = (e) => {
