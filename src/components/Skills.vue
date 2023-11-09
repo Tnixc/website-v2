@@ -162,10 +162,8 @@
         called a meta-framework because it's being developed at meta?</span
       >
     <h2>## Tools / Apps</h2>
-    <div class="flex flex-wrap">
-      <!-- <div class="max-w-lg flex-grow h-20 bg-green-300"> -->
-        <Three />
-      <!-- </div> -->
+    <div class="flex flex-wrap max-w-7xl">
+      <Three />
       <div class="max-w-lg flex-grow h-20 bg-blue-300">
         
       </div>
