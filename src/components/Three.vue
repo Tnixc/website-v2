@@ -1,9 +1,8 @@
 <template>
   <div @mouseenter="startRotation" @mouseleave="stopRotation">
-    <div ref="container" class="ring-4"></div>
+    <div ref="container" class=""></div>
   </div>
 </template>
-
 <script>
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader";
@@ -46,8 +45,8 @@ export default {
         scene.add(model);
 
         // Add a rotation to the loaded model
-        const rotationSpeed = 0.1; // Adjust the rotation speed as needed
-        model.rotation.y = 0;
+        const rotationSpeed = 0.07; // Adjust the rotation speed as needed
+        model.rotation.y = 0.7;
         const animateModelRotation = () => {
           model.rotation.y += rotationSpeed;
         };
