@@ -14,7 +14,7 @@
         ></div>
       </div>
     </div>
-    <div class="p-4 bg-blue-400/50">
+    <div class="p-4 bg-cyan-400/50">
       <h3 class="text-3xl">Tailwind CSS</h3>
       <p class="text-teal-900">
         The objectively best way to write styles. <br />
