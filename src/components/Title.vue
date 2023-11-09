@@ -2,15 +2,16 @@
   <div
     class="h-screen w-1/2 bg-zinc-900/40 backdrop-blur-sm backdrop-invert backdrop-hue-rotate-180 backdrop-saturate-200 flex flex-col justify-center border-r-4 border-b-4 border-zinc-50/50"
   >
-    <h2 class="pl-8 text-5xl ">Haiii</h2>
+    <h2 class="pl-8 text-5xl">Haiii</h2>
     <h1 class="pl-8 text-9xl relative">I'm Tnixc</h1>
-    <h2 class="pl-8 text-3xl ">
+    <h2 class="pl-8 text-3xl">
       Just a 15y/o {{ typedText }}
       <span class="underscore" :class="{ flash: showUnderscore }">_</span>
     </h2>
-    <h2 class="pl-8 text-3xl ">Shipping bad code 24/7
-    </h2>
-    <p class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white">scroll to begin</p>
+    <h2 class="pl-8 text-3xl">Shipping bad code 24/7</h2>
+    <p class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white">
+      scroll to begin
+    </p>
   </div>
 </template>
 
@@ -178,5 +179,4 @@ h1::after {
   height: 100%;
   width: 100%;
 }
-
 </style>
