@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex border-b-4 border-green-600 backdrop-blur-sm hover:shadow-xl transition-all duration-300"
+    class="flex border-b-4 border-green-600 hover:shadow-xl transition-all duration-300"
     @mouseenter="startRotation"
     @mouseleave="stopRotation"
   >

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen w-1/2 bg-zinc-900/40 backdrop-blur-sm backdrop-invert backdrop-hue-rotate-180 backdrop-saturate-200 flex flex-col justify-center border-r-4 border-b-4 border-zinc-50/50"
+    class="h-screen w-1/2 bg-zinc-900/40 backdrop-invert backdrop-hue-rotate-180 backdrop-saturate-200 flex flex-col justify-center border-r-4 border-b-4 border-zinc-50/50"
   >
     <h2 class="bg-white w-fit pl-8 text-5xl">Haiii</h2>
     <h1 class="bg-white w-fit pl-8 text-9xl relative">I'm Tnixc</h1>

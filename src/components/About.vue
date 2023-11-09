@@ -1,7 +1,7 @@
 <template>
   <div class="px-24">
     <div
-      class="p-1 bg-zinc-100/60 w-fit backdrop-blur-sm"
+      class="p-1 bg-zinc-100/60 w-fit"
       v-motion
       :initial="{ opacity: 0, y: 100 }"
       :visibleOnce="{
@@ -30,9 +30,9 @@
       }"
     >
       <div
-        class="backdrop-blur-lg bg-gradient-to-t from-zinc-300/40 to-zinc-50 border-4 p-12 shadow-xl"
+        class=" bg-gradient-to-t from-zinc-300/40 to-zinc-50 border-4 p-12 shadow-xl"
       >
-        <div class="flex gap-2 text-lg flex-wrap backdrop-blur-sg">
+        <div class="flex gap-2 text-lg flex-wrap">
           <span>
             <span>{{ TimeDiff }}</span> seconds old
           </span>
