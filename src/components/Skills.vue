@@ -169,10 +169,11 @@
   </div>
 </template>
 <script lang="ts">
+import { defineAsyncComponent } from 'vue';
 //@ts-ignore
-import VueCard from "@/components/VueCard.vue";
+const VueCard = defineAsyncComponent(() => import('./VueCard.vue'));
 //@ts-ignore
-import TailwindCard from "@/components/TailwindCard.vue";
+const TailwindCard = defineAsyncComponent(() => import('./TailwindCard.vue'));
 export default {
   components: {
     VueCard,

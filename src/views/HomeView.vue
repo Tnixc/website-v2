@@ -73,16 +73,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, onMounted, defineAsyncComponent } from "vue";
 import Scroller from "@/components/Scroller.vue";
-import BG from "@/components/BG.vue";
 import Title from "@/components/Title.vue";
 import About from "@/components/About.vue";
 import Games from "@/components/Games.vue";
 import Contact from "@/components/Contact.vue";
 import Skills from "@/components/Skills.vue";
 
-import Footer from "@/components/Footer.vue";
+// import BG from "@/components/BG.vue";
+// import Footer from "@/components/Footer.vue";
+const BG = defineAsyncComponent(() => import("@/components/BG.vue"));
+const Footer = defineAsyncComponent(() => import("@/components/Footer.vue"));
 
 const backgroundPosition = ref("right 0px");
 
