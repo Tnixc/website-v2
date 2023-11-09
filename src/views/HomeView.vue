@@ -60,7 +60,7 @@
   </div>
   <div class="w-full flex justify-center items-center">
     <div
-      class="h-2 max-w-3xl w-full backdrop-invert backdrop-saturate-200 backdrop-hue-rotate-180"
+      class="h-2 max-w-3xl w-full backdrop-invert backdrop-saturate-200 backdrop-hue-rotate-180 backdrop-blur-sm"
     ></div>
   </div>
   <Skills />
