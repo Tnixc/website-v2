@@ -11,6 +11,7 @@
   >
     I mainly do UI/UX design and Front-end development, but I would like to
     learn more about how js frameworks and web technologies work unde the hood.
+    Gonna learn how to do SSR one day but that day is not today.
   </p>
   <div class="pl-40">
     <h2 class="text-4xl pt-10 pl-10">## Languages</h2>
@@ -153,8 +154,23 @@
         </div>
       </div>
     </div>
-    <h3>### Frameworks / Libraries</h3>
+    <h2 class="text-4xl pt-10 pl-10">
+      ## Frameworks / Libraries
+    </h2>
+    <span class="pl-10 text-lg text-zinc-600 bg-white">
+        What do you even call these anymore? what is a meta-framework. is it
+        called a meta-framework because it's being developed at meta?</span
+      >
     <h2>## Tools / Apps</h2>
+    <div class="flex flex-wrap">
+      <div class="max-w-lg flex-grow h-20 bg-green-300">
+
+      </div>
+      <div class="max-w-lg flex-grow h-20 bg-blue-300">
+        
+      </div>
+
+    </div>
   </div>
 </template>
 <script lang="ts">
