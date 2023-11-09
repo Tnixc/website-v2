@@ -4,9 +4,9 @@
     @mouseenter="startRotation"
     @mouseleave="stopRotation"
   >
-    <div class="bg-green-200/5 relative">
+    <div class="bg-green-200 relative">
       <div
-        class="aspect-square bg-gradient-to-r from-lime-200/10 to-green-400/20"
+        class="aspect-square "
       >
         <div ref="container"></div>
         <div
@@ -14,7 +14,7 @@
         ></div>
       </div>
     </div>
-    <div class="p-2 bg-green-400/20">
+    <div class="p-4 bg-green-400/40">
       <h3 class="text-3xl">VueJS</h3>
       <p class="text-green-900">
         I've only ever tried Vue, but I'm loving it,<br />
