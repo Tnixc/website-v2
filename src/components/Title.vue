@@ -2,15 +2,15 @@
   <div
     class="h-screen w-1/2 bg-zinc-900/40 backdrop-invert backdrop-hue-rotate-180 backdrop-saturate-200 flex flex-col justify-center border-r-4 border-b-4 border-zinc-50/80"
   >
-    <h2 class="bg-white w-fit pl-8 text-5xl">Haiii</h2>
-    <h1 class="bg-white w-fit pl-8 text-9xl relative">I'm Tnixc</h1>
-    <h2 class="bg-white w-fit pl-8 text-3xl">
+    <h2 class="text-white w-fit pl-8 text-5xl">Haiii</h2>
+    <h1 class="text-white w-fit pl-8 text-9xl relative">I'm Tnixc</h1>
+    <h2 class="text-white w-fit pl-8 text-3xl">
       Just a 15y/o {{ typedText }}
-      <span class="bg-white underscore" :class="{ flash: showUnderscore }"
+      <span class="text-white underscore" :class="{ flash: showUnderscore }"
         >_</span
       >
     </h2>
-    <h2 class="pl-8 bg-white text-3xl w-fit">Shipping bad code 24/7</h2>
+    <h2 class="pl-8 text-white text-3xl w-fit">Shipping bad code 24/7</h2>
     <p class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white">
       scroll to begin
     </p>
