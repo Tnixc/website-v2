@@ -147,7 +147,7 @@
         <div class="card-content">
           <h1>I don't even know 6 languages :(</h1>
           <img
-            class="h-full"
+            class="h-24"
             src="https://steamuserimages-a.akamaihd.net/ugc/2046364991293041180/A39C90355C1EA4D2F45D087638D02B5E2D598929/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
             alt="Skull emoji"
           />
@@ -155,15 +155,13 @@
       </div>
     </div>
     <h2 class="text-4xl pt-10 pl-10">## Frameworks / Libraries</h2>
-    <span class="pl-10 text-lg text-zinc-600 bg-white">
-      What do you even call these anymore? what is a meta-framework. is it
-      called a meta-framework because it's being developed at meta?</span
-    >
-    <h2>## Tools / Apps</h2>
     <div class="flex flex-wrap max-w-7xl">
       <VueCard />
       <TailwindCard />
+      <div class="bg-white p-2 text-xl">I also tried out three.js as you can see in the rotating models above</div>
     </div>
+    <h2>## Tools / Apps</h2>
+
   </div>
 </template>
 <script lang="ts">
