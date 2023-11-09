@@ -164,19 +164,19 @@
     <h2>## Tools / Apps</h2>
     <div class="flex flex-wrap max-w-7xl">
       <VueCard />
-      <div class="max-w-lg flex-grow h-20 bg-blue-300">
-        
-      </div>
-
+      <TailwindCard />
     </div>
   </div>
 </template>
 <script lang="ts">
 //@ts-ignore
 import VueCard from "@/components/VueCard.vue";
+//@ts-ignore
+import TailwindCard from "@/components/TailwindCard.vue";
 export default {
   components: {
     VueCard,
+    TailwindCard,
   },
   mounted() {
     document.getElementById("cards")!.onmousemove = (e) => {

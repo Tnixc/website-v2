@@ -1,24 +1,23 @@
 <template>
   <div
-    class="flex border-b-4 border-green-600 backdrop-blur-sm hover:shadow-xl transition-all duration-300"
+    class="flex border-b-4 border-cyan-600 backdrop-blur-sm hover:shadow-xl transition-all duration-300"
     @mouseenter="startRotation"
     @mouseleave="stopRotation"
   >
-    <div class="bg-green-200/5 relative">
+    <div class="bg-blue-200/5 relative">
       <div
-        class="aspect-square bg-gradient-to-r from-lime-200/10 to-green-400/20"
+        class="aspect-square bg-gradient-to-r from-lime-200/10 to-blue-400/20"
       >
         <div ref="container"></div>
         <div
-          class="absolute inset-10 bg-green-300/80 -z-10 rounded-full blur-xl"
+          class="absolute inset-10 bg-blue-500/80 -z-10 rounded-full blur-xl"
         ></div>
       </div>
     </div>
-    <div class="p-2 bg-green-400/20">
-      <h3 class="text-2xl">VueJS</h3>
+    <div class="p-2 bg-blue-400/20">
+      <h3 class="text-2xl">Tailwind CSS</h3>
       <p class="">
-        I've only ever tried Vue, but I'm loving it,<br />
-        so probably gonna stick with it.
+        The objectively best way to write styles. <br> I'm gonna use it everywhere.
       </p>
     </div>
   </div>
@@ -42,9 +41,9 @@ export default {
       const scene = new THREE.Scene();
 
       // Create a camera
-      const camera = new THREE.PerspectiveCamera(6, 1, 0.1, 1000);
+      const camera = new THREE.PerspectiveCamera(3, 1, 0.1, 1000);
       camera.position.z = 100;
-      camera.position.y = 4;
+      camera.position.y = 1;
       camera.rotation.x = 0;
 
       // Create a renderer with a transparent background
@@ -60,7 +59,7 @@ export default {
 
       // Load your external 3D model
       const loader = new GLTFLoader();
-      loader.load("src/assets/0.gltf", (gltf) => {
+      loader.load("src/assets/1.gltf", (gltf) => {
         const model = gltf.scene;
         scene.add(model);
 
@@ -70,7 +69,7 @@ export default {
         const animateModelRotation = () => {
           model.rotation.y += rotationSpeed;
         };
-        const ambientLight2 = new THREE.AmbientLight(0x7893ce, 5.0); // Adjust the intensity (e.g., 1.0 for a strong light)
+        const ambientLight2 = new THREE.AmbientLight(0x7893ce, 4.0); // Adjust the intensity (e.g., 1.0 for a strong light)
         scene.add(ambientLight2);
         const directionalLight = new THREE.DirectionalLight(0xcae7c2, 5.0);
         directionalLight.position.set(10, 10, 10); // Set the position of the directional light
