@@ -6,7 +6,9 @@
     <h1 class="bg-white w-fit pl-8 text-9xl relative">I'm Tnixc</h1>
     <h2 class="bg-white w-fit pl-8 text-3xl">
       Just a 15y/o {{ typedText }}
-      <span class="bg-white underscore" :class="{ flash: showUnderscore }">_</span>
+      <span class="bg-white underscore" :class="{ flash: showUnderscore }"
+        >_</span
+      >
     </h2>
     <h2 class="pl-8 bg-white text-3xl">Shipping bad code 24/7</h2>
     <p class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white">

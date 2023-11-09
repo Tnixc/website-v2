@@ -17,7 +17,8 @@
     <div class="p-2 bg-blue-400/20">
       <h3 class="text-2xl">Tailwind CSS</h3>
       <p class="">
-        The objectively best way to write styles. <br> I'm gonna use it everywhere.
+        The objectively best way to write styles. <br />
+        I'm gonna use it everywhere.
       </p>
     </div>
   </div>

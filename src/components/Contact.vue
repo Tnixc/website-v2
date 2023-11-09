@@ -4,7 +4,7 @@
       ## Contact + Links
     </h1>
     <div
-      class="p-12 bg-gradient-to-t from-blue-100/40 to-sky-200 border-l-2 border-blue-300  border-b-zinc-50 border-b-2"
+      class="p-12 bg-gradient-to-t from-blue-100/40 to-sky-200 border-l-2 border-blue-300 border-b-zinc-50 border-b-2"
     >
       <div class="flex gap-0.5 flex-wrap">
         <div class="p-2 bg-blue-50 flex items-center m-1 hover:shadow-md">
@@ -18,7 +18,9 @@
           target="_blank"
         >
           <i class="p-2 scale-125 fa-brands fa-x-twitter"></i>
-          <p class="p-2 font-xl underline underline-offset-4 decoration-2 decoration-blue-500">
+          <p
+            class="p-2 font-xl underline underline-offset-4 decoration-2 decoration-blue-500"
+          >
             _Tnixc
           </p>
           <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square"></i>
@@ -35,7 +37,9 @@
           target="_blank"
         >
           <i class="p-2 scale-125 fa-brands fa-github"></i>
-          <p class="p-2 font-xl underline underline-offset-4 decoration-2 decoration-blue-500">
+          <p
+            class="p-2 font-xl underline underline-offset-4 decoration-2 decoration-blue-500"
+          >
             Tnixc
           </p>
           <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square"></i>
