@@ -169,7 +169,7 @@
   </div>
 </template>
 <script lang="ts">
-// import { defineAsyncComponent } from 'vue'; 
+import { defineAsyncComponent } from 'vue'; 
 // import VueCard from './VueCard.vue';
 // import TailwindCard from './TailwindCard.vue';
 //@ts-ignore
