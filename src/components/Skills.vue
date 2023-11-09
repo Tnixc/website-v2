@@ -148,8 +148,8 @@
           <h1>I don't even know 6 languages :(</h1>
           <img
             class="h-full"
-            src="https://media.tenor.com/FQ38aKxDsr4AAAAC/skull-glowing-eye.gif"
-            alt=""
+            src="https://steamuserimages-a.akamaihd.net/ugc/2046364991293041180/A39C90355C1EA4D2F45D087638D02B5E2D598929/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+            alt="Skull emoji"
           />
         </div>
       </div>
@@ -163,9 +163,9 @@
       >
     <h2>## Tools / Apps</h2>
     <div class="flex flex-wrap">
-      <div class="max-w-lg flex-grow h-20 bg-green-300">
-
-      </div>
+      <!-- <div class="max-w-lg flex-grow h-20 bg-green-300"> -->
+        <Three />
+      <!-- </div> -->
       <div class="max-w-lg flex-grow h-20 bg-blue-300">
         
       </div>
@@ -174,7 +174,12 @@
   </div>
 </template>
 <script lang="ts">
+//@ts-ignore
+import Three from "@/components/Three.vue";
 export default {
+  components: {
+    Three,
+  },
   mounted() {
     document.getElementById("cards")!.onmousemove = (e) => {
       for (const card of Array.from(
