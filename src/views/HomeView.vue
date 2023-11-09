@@ -8,7 +8,7 @@
     </div>
     <BG class="-z-10 fixed" />
   </div>
-  <div class="flex flex-col h-screen fixed right-0 top-0 p-7 justify-around">
+  <div class="flex-col h-screen fixed right-0 top-0 p-7 justify-around hidden lg:flex">
     <a
       @click="scrollToSection('About')"
       class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
@@ -33,28 +33,28 @@
   <Scroller />
   <Title />
   <div class="h-40">
-    <div class="ml-96 w-0.5 h-full striped translate-x-4"></div>
+    <div class="ml-32 lg:ml-96 w-0.5 h-full striped translate-x-4"></div>
   </div>
   <a href="" id="About"></a>
   <div class="h-40">
-    <div class="ml-96 w-0.5 h-full striped translate-x-4"></div>
+    <div class="ml-32 lg:ml-96 w-0.5 h-full striped translate-x-4"></div>
   </div>
   <About />
   <Games />
   <div class="h-40">
-    <div class="ml-96 w-0.5 h-full striped translate-x-40"></div>
+    <div class="ml-32 lg:ml-96 w-0.5 h-full striped translate-x-40"></div>
   </div>
   <a id="Contact"></a>
   <div class="h-40">
-    <div class="ml-96 w-0.5 h-full striped translate-x-40"></div>
+    <div class="ml-32 lg:ml-96 w-0.5 h-full striped translate-x-40"></div>
   </div>
   <Contact />
   <div class="h-60">
-    <div class="ml-96 w-0.5 h-full striped translate-x-80"></div>
+    <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-80"></div>
   </div>
   <a id="Skills"></a>
   <div class="h-60">
-    <div class="ml-96 w-0.5 h-full striped translate-x-80"></div>
+    <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-80"></div>
   </div>
   <div class="w-full flex justify-center items-center">
     <div

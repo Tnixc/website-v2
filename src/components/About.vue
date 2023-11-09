@@ -1,5 +1,5 @@
 <template>
-  <div class="px-24">
+  <div class="">
     <div
       class="p-1 bg-zinc-100/60 w-fit"
       v-motion
@@ -14,10 +14,10 @@
       }"
       :delay="600"
     >
-      <h1 class="bg-zinc-200 text-9xl w-fit"># About</h1>
+      <h1 class="bg-zinc-200 text-7xl lg:text-9xl w-fit"># About</h1>
     </div>
     <div
-      class="pr-24 w-10/12"
+      class="lg:pr-24 w-10/12"
       v-motion
       :initial="{ opacity: 0, y: 100 }"
       :visibleOnce="{
@@ -30,7 +30,7 @@
       }"
     >
       <div
-        class="bg-gradient-to-t from-zinc-300/40 to-zinc-50 border-4 p-12 shadow-xl"
+        class="bg-gradient-to-t from-zinc-300/40 to-zinc-50 border-4 lg:p-12 p-6 shadow-xl w-full md:backdrop-blur-none backdrop-blur-md"
       >
         <div class="flex gap-2 text-lg flex-wrap">
           <span>

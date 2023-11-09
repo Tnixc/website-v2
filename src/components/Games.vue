@@ -1,9 +1,9 @@
 <template>
-  <h1 class="border-l-2 ml-48 text-5xl bg-violet-200 w-8/12 border-violet-500">
+  <h1 class="border-l-2 ml-6 lg:ml-48 text-5xl bg-violet-200 w-10/12 lg:w-8/12 border-violet-500">
     ## Games
   </h1>
   <div
-    class="border-l-2 ml-48 p-12 bg-gradient-to-t from-indigo-300/30 to-violet-200 w-8/12 border-violet-300 border-b-zinc-50 border-b-2"
+    class=" border-l-2 ml-6 lg:ml-48 lg:p-12 p-4 bg-gradient-to-t from-indigo-300/30 to-violet-200 w-10/12 lg:w-8/12 border-violet-300 border-b-zinc-50 border-b-2"
   >
     <div class="flex gap-2 flex-wrap">
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">
