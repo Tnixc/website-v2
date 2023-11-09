@@ -154,13 +154,11 @@
         </div>
       </div>
     </div>
-    <h2 class="text-4xl pt-10 pl-10">
-      ## Frameworks / Libraries
-    </h2>
+    <h2 class="text-4xl pt-10 pl-10">## Frameworks / Libraries</h2>
     <span class="pl-10 text-lg text-zinc-600 bg-white">
-        What do you even call these anymore? what is a meta-framework. is it
-        called a meta-framework because it's being developed at meta?</span
-      >
+      What do you even call these anymore? what is a meta-framework. is it
+      called a meta-framework because it's being developed at meta?</span
+    >
     <h2>## Tools / Apps</h2>
     <div class="flex flex-wrap max-w-7xl">
       <VueCard />
@@ -169,13 +167,13 @@
   </div>
 </template>
 <script lang="ts">
-import { defineAsyncComponent } from 'vue'; 
+import { defineAsyncComponent } from "vue";
 // import VueCard from './VueCard.vue';
 // import TailwindCard from './TailwindCard.vue';
 //@ts-ignore
-const VueCard = defineAsyncComponent(() => import('./VueCard.vue'));
+const VueCard = defineAsyncComponent(() => import("./VueCard.vue"));
 //@ts-ignore
-const TailwindCard = defineAsyncComponent(() => import('./TailwindCard.vue'));
+const TailwindCard = defineAsyncComponent(() => import("./TailwindCard.vue"));
 export default {
   components: {
     VueCard,

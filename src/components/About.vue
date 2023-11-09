@@ -30,7 +30,7 @@
       }"
     >
       <div
-        class=" bg-gradient-to-t from-zinc-300/40 to-zinc-50 border-4 p-12 shadow-xl"
+        class="bg-gradient-to-t from-zinc-300/40 to-zinc-50 border-4 p-12 shadow-xl"
       >
         <div class="flex gap-2 text-lg flex-wrap">
           <span>
@@ -57,8 +57,8 @@
           anime, and doing 2D and 3D art. I started webdev around 2022, but
           honestly time has been blur since 2020 so I'm not sure.
           <br /><br />I like trains and bikes(a huge fan of dutch urban design),
-          public transit, typography, and open source. I also like chilling in IKEA and
-          hiking :3.
+          public transit, typography, and open source. I also like chilling in
+          IKEA and hiking :3.
         </p>
       </div>
     </div>
