@@ -1,5 +1,5 @@
 <template>
-<svg
+  <svg
     version="1.1"
     id="topographic"
     xmlns="http://www.w3.org/2000/svg"

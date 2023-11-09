@@ -13,22 +13,22 @@
   >
     <a
       @click="scrollToSection('About')"
-      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800  inline-block text-transparent bg-clip-text"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
       >About</a
     >
     <a
       @click="scrollToSection('Contact')"
-      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800  inline-block text-transparent bg-clip-text"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
       >Contact / Links</a
     >
     <a
       @click="scrollToSection('Skills')"
-      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800  inline-block text-transparent bg-clip-text"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
       >Skills / Tools</a
     >
     <a
       @click="scrollToSection('Projects')"
-      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800  inline-block text-transparent bg-clip-text"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
       >Projects</a
     >
   </div>
@@ -56,10 +56,12 @@
   </div>
   <a id="Skills"></a>
   <div class="h-60">
-    <div class="ml-96 w-0.5 h-full striped translate-x-80 "></div>
+    <div class="ml-96 w-0.5 h-full striped translate-x-80"></div>
   </div>
   <div class="w-full flex justify-center items-center">
-    <div class="h-2  max-w-3xl w-full backdrop-invert backdrop-saturate-200 backdrop-hue-rotate-180"></div>
+    <div
+      class="h-2 max-w-3xl w-full backdrop-invert backdrop-saturate-200 backdrop-hue-rotate-180"
+    ></div>
   </div>
   <Skills />
   <div class="h-screen"></div>

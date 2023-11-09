@@ -49,7 +49,7 @@ body {
   -webkit-user-drag: none;
 }
 *::selection {
-  @apply bg-violet-300 text-black
+  @apply bg-violet-300 text-black;
 }
 .tetikus__cursor::after {
   content: "";
