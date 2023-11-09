@@ -170,12 +170,12 @@
 </template>
 <script lang="ts">
 // import { defineAsyncComponent } from 'vue'; 
-import VueCard from './VueCard.vue';
-import TailwindCard from './TailwindCard.vue';
-// //@ts-ignore
-// const VueCard = defineAsyncComponent(() => import('./VueCard.vue'));
-// //@ts-ignore
-// const TailwindCard = defineAsyncComponent(() => import('./TailwindCard.vue'));
+// import VueCard from './VueCard.vue';
+// import TailwindCard from './TailwindCard.vue';
+//@ts-ignore
+const VueCard = defineAsyncComponent(() => import('./VueCard.vue'));
+//@ts-ignore
+const TailwindCard = defineAsyncComponent(() => import('./TailwindCard.vue'));
 export default {
   components: {
     VueCard,

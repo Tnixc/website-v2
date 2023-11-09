@@ -60,7 +60,7 @@ export default {
 
       // Load your external 3D model
       const loader = new GLTFLoader();
-      loader.load("src/assets/0.gltf", (gltf) => {
+      loader.load("assets/0.gltf", (gltf) => {
         const model = gltf.scene;
         scene.add(model);
 
