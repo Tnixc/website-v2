@@ -9,7 +9,7 @@
     <BG class="-z-10 fixed" />
   </div>
   <div
-    class="flex-col h-screen fixed right-0 top-0 p-7 justify-around hidden lg:flex"
+    class="flex-col h-screen fixed right-5 top-0 p-7 justify-around hidden lg:flex z-[999]"
   >
     <a
       v-motion
@@ -185,12 +185,12 @@ div.img {
   background-size: 1000px;
 }
 .content-l {
-  position: relative;
+  @apply relative z-10
 }
 .content-l::after {
   transition: 0.4s ease-in-out;
   content: "";
-  @apply w-0 bg-zinc-300/50 absolute -z-10 top-1/2 h-1/2 bottom-0 right-0;
+  @apply w-0 bg-blue-300/40 absolute -z-10 top-1/2 h-1/2 bottom-0 right-0;
 }
 .content-l:hover::after {
   @apply w-full;
