@@ -3,7 +3,7 @@
   <h2 class="text-xl lg:text-5xl text-zinc-600">## The good stuff</h2>
   <div class="mt-10 p-2 bg-zinc-200 gap-2 flex flex-col lg:grid lg:grid-cols-3 lg:auto-rows-auto">
     <div
-      class="h-full border-2 border-white bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden lg:col-span-2"
+      class="h-full border-2 border-indigo-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden lg:col-span-2"
     >
     <div class="grid lg:grid-cols-2 h-full">
       <div class="p-8">
@@ -16,7 +16,7 @@
     </div>
   </div>
     <div
-      class="h-full border-2 border-white bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-4"
+      class="h-full border-2 border-fuchsia-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-8"
     >
       <div class="catppuccin py-6 drop-shadow-lg"></div>
       <h1 class="text-2xl">Maintainer at catppuccin</h1>
@@ -24,20 +24,27 @@
       <a class="underline" href="https://github.com/catppuccin">https://github.com/catppuccin</a>
     </div>
     <div
-      class="h-full border-2 border-white bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-4"
+      class="h-full border-2 border-purple-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-8 pb-0 flex flex-col justify-center"
     >
       <h1 class="text-2xl">Dotfiles</h1>
+      <p class=" text-zinc-500 pt-2">My personal config files for my macOS setup</p>
+      <a class="underline" href="https://github.com/Tnixc/dots">https://github.com/Tnixc/dots</a>
+      <img class="my-4 max-h-40" src="https://github-readme-stats.vercel.app/api/pin/?username=Tnixc&repo=dots&theme=graywhite" alt="">
     </div>
     <div class="flex flex-col gap-2 col-span-2">
       <div
-        class="h-full border-2 border-white bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-4"
+        class="h-full border-2 border-blue-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-4"
       >
         <h1 class="text-2xl">Website v2</h1>
+        <p class=" text-zinc-500 pt-2">My personal website. This one. Who doesn't love a bit of recursion? Made with vue and tailwind</p>
+      <a class="underline" href="https://tnixc.space">https://tnixc.space</a>
       </div>
       <div
-        class="h-full border-2 border-white bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-4"
+        class="h-full border-2 border-cyan-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-4"
       >
         <h1 class="text-2xl">Website v1</h1>
+        <p class=" text-zinc-500 pt-2">An old version of my website. It was pretty bad. Made with vue</p>
+      <a class="underline" href="https://github.com/Tnixc/website">https://github.com/Tnixc/website</a>
       </div>
     </div>
   </div>

@@ -204,6 +204,7 @@
   >
     <Projects />
   </div>
+  <div class="h-80"></div>
   <Footer />
 </template>
 
@@ -215,12 +216,12 @@ import About from "@/components/About.vue";
 import Games from "@/components/Games.vue";
 import Contact from "@/components/Contact.vue";
 import Skills from "@/components/Skills.vue";
-import Projects from "@/components/Projects.vue";
+// import Projects from "@/components/Projects.vue";
 // import BG from "@/components/BG.vue";
 // import Footer from "@/components/Footer.vue";
 const BG = defineAsyncComponent(() => import("@/components/BG.vue"));
 const Footer = defineAsyncComponent(() => import("@/components/Footer.vue"));
-
+const Projects = defineAsyncComponent(() => import("@/components/Projects.vue"));
 const backgroundPosition = ref("right 0px");
 
 onMounted(() => {
