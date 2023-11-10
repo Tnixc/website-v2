@@ -12,7 +12,7 @@
         >_</span
       >
     </h2>
-    <h2 class="pl-8 text-slate-500 text-3xl w-fit">Shipping bad code 24/7</h2>
+    <h2 class="pl-8 text-slate-500 text-3xl w-fit backdrop-blur-md">Shipping bad code 24/7</h2>
     <p class="absolute bottom-10 left-1/2 -translate-x-1/2 text-xl text-white">
       scroll to begin
     </p>
