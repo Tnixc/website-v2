@@ -200,7 +200,7 @@
     <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-20"></div>
   </div>
   <div
-    class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500 "
+    class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500 backdrop-blur-lg lg:backdrop-blur-0"
   >
     <Projects />
   </div>

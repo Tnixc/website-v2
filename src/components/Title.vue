@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen lg:w-1/2 w-11/12 bg-slate-900/40 backdrop-invert backdrop-hue-rotate-180 backdrop-saturate-200 flex flex-col justify-center border-r-4 border-b-4 border-slate-50/80"
+    class="h-screen lg:w-1/2 w-11/12 bg-slate-900/40 backdrop-invert backdrop-hue-rotate-180 backdrop-saturate-200 flex flex-col justify-center border-r-4 border-b-4 border-slate-50/80 relative"
   >
     <h2 class="text-slate-500 w-fit pl-8 text-5xl">Haiii</h2>
     <h1 class="text-white w-fit pl-8 lg:text-9xl text-7xl">
