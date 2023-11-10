@@ -40,7 +40,7 @@
     class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500 bg-zinc-100/80 relative"
   >
     <svg
-      class="absolute left-0 top-0"
+      class="absolute hidden lg:block left-0 top-0"
       xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
@@ -52,7 +52,7 @@
       ></path>
     </svg>
     <svg
-      class="absolute right-0 top-0"
+      class="absolute hidden lg:block right-0 top-0"
       xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
@@ -64,7 +64,7 @@
       ></path>
     </svg>
     <svg
-      class="absolute left-0 bottom-0"
+      class="absolute hidden lg:block left-0 bottom-0"
       xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
@@ -76,7 +76,7 @@
       ></path>
     </svg>
     <svg
-      class="absolute right-0 bottom-0"
+      class="absolute hidden lg:block right-0 bottom-0"
       xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
