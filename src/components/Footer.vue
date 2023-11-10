@@ -36,6 +36,7 @@
         <p class="text-lg text-slate-200">Latest Commit: <span v-html="sha"></span></p>
         <p class="opacity-70 text-slate-200 text-md">Last updated on <span v-html="d"></span></p>
       </div>
+      <p class="px-2 ml-auto mr-10 text-pink-400 text-xl">Made with <i class="fill-pink-400 fa-solid fa-heart"></i></p>
     </div>
 </template>
 <script lang="ts">
