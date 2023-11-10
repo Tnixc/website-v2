@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:pl-24">
+  <div class="">
     <div
       class="p-1 bg-zinc-100/60 w-fit"
       v-motion
@@ -17,7 +17,7 @@
       <h1 class="bg-zinc-200 text-7xl lg:text-9xl w-fit"># About</h1>
     </div>
     <div
-      class="lg:pr-24 w-10/12"
+      class=""
       v-motion
       :initial="{ opacity: 0, y: 100 }"
       :visibleOnce="{

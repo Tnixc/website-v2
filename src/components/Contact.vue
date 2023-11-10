@@ -1,10 +1,10 @@
 <template>
-  <div id="container" ref="target" class="lg:ml-24 lg:w-7/12 hover:shadow-md">
+  <div id="container" ref="target" class=" hover:shadow-md">
     <h1 class="text-5xl bg-sky-200 border-l-2 border-t-2 border-blue-500">
       ## Contact + Links
     </h1>
     <div
-      class="lg:p-12 p-4 bg-gradient-to-t from-blue-100/40 to-sky-200 border-l-2 border-blue-300 border-b-zinc-50 border-b-2"
+      class="p-12 bg-gradient-to-t from-blue-100/40 to-sky-200 border-l-2 border-blue-300 border-b-zinc-50 border-b-2"
     >
       <div class="flex gap-0.5 flex-wrap">
         <div class="p-2 bg-blue-50 flex items-center m-1 hover:shadow-md">
@@ -47,13 +47,13 @@
         <div class="flex-grow w-full"></div>
         <div class="p-2 bg-blue-50 flex items-center m-1 hover:shadow-md">
           <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tnixc&layout=compact&theme=catppuccin_latte&bg_color=00000000&hide_border=true"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tnixc&layout=compact&theme=graywhite&bg_color=00000000&hide_border=true"
             alt="A graph showing my most used languages"
           />
         </div>
         <div class="p-2 bg-blue-50 flex items-center m-1 hover:shadow-md">
           <img
-            src="https://github-readme-stats.vercel.app/api?username=Tnixc&show_icons=true&theme=catppuccin_latte&bg_color=00000000&hide_border=true&rank_icon=github"
+            src="https://github-readme-stats.vercel.app/api?username=Tnixc&show_icons=true&theme=graywhite&bg_color=00000000&hide_border=true&rank_icon=github"
             alt="A graph showing my github stats"
           />
         </div>
@@ -108,11 +108,11 @@ const cardTransformOpposite = computed(() => {
   transition: 0.25s linear;
 }
 #container {
-  transform: v-bind(cardTransform);
+  transform: v-bind(cardTransform) !important; /* NO IDEA WHY THIS IS NECESSARY */
   transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1);
-}
+} 
 #container > div > div {
-  transform: v-bind(cardTransformOpposite);
+  transform: v-bind(cardTransformOpposite) !important;
   transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1);
 }
 </style>
