@@ -90,7 +90,7 @@
     <Contact
       v-motion
       :initial="{ opacity: 0, y: 100 }"
-      :visibleOnce="{
+      :enter="{
         opacity: 1,
         y: 0,
         transition: {
@@ -113,7 +113,7 @@
     class="lg:ml-20 lg:w-9/12 lg:p-12 m-1 bg-slate-900 hover:shadow-lg transition-all ring-2 ring-slate-600 ring-offset-8"
     v-motion
     :initial="{ opacity: 0 }"
-    :visibleOnce="{
+    :enter="{
       opacity: 1,
       transition: {
         type: 'keyframes',
@@ -145,7 +145,7 @@
   <a
     v-motion
     :initial="{ opacity: 0, y: 100 }"
-    :visibleOnce="{
+    :enter="{
       opacity: 1,
       y: 0,
       transition: {
@@ -161,7 +161,7 @@
   <a
     v-motion
     :initial="{ opacity: 0, y: 100 }"
-    :visibleOnce="{
+    :enter="{
       opacity: 1,
       y: 0,
       transition: {
@@ -177,7 +177,7 @@
   <a
     v-motion
     :initial="{ opacity: 0, y: 100 }"
-    :visibleOnce="{
+    :enter="{
       opacity: 1,
       y: 0,
       transition: {
@@ -193,7 +193,7 @@
   <a
     v-motion
     :initial="{ opacity: 0, y: 100 }"
-    :visibleOnce="{
+    :enter="{
       opacity: 1,
       y: 0,
       transition: {
