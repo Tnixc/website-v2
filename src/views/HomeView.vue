@@ -85,7 +85,9 @@
   <div class="h-40">
     <div class="ml-32 lg:ml-96 w-0.5 h-full striped translate-x-4"></div>
   </div>
-  <div class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500">
+  <div
+    class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500"
+  >
     <About />
     <Games />
   </div>
@@ -97,11 +99,57 @@
   <div class="h-40">
     <div class="ml-32 lg:ml-96 w-0.5 h-full striped translate-x-40"></div>
   </div>
-  <div class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500 bg-zinc-100/80 relative">
-    <svg class="absolute left-0 top-0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#71717A" viewBox="0 0 256 256"><path d="M197.66,197.66a8,8,0,0,1-11.32,0L72,83.31V168a8,8,0,0,1-16,0V64a8,8,0,0,1,8-8H168a8,8,0,0,1,0,16H83.31L197.66,186.34A8,8,0,0,1,197.66,197.66Z"></path></svg>
-    <svg class="absolute right-0 top-0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#71717A" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
-    <svg class="absolute left-0 bottom-0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#71717A" viewBox="0 0 256 256"><path d="M197.66,69.66,83.31,184H168a8,8,0,0,1,0,16H64a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v84.69L186.34,58.34a8,8,0,0,1,11.32,11.32Z"></path></svg>
-    <svg class="absolute right-0 bottom-0" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#71717A" viewBox="0 0 256 256"><path d="M200,88V192a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h84.69L58.34,69.66A8,8,0,0,1,69.66,58.34L184,172.69V88a8,8,0,0,1,16,0Z"></path></svg>
+  <div
+    class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500 bg-zinc-100/80 relative"
+  >
+    <svg
+      class="absolute left-0 top-0"
+      xmlns="http://www.w3.org/2000/svg"
+      width="48"
+      height="48"
+      fill="#71717A"
+      viewBox="0 0 256 256"
+    >
+      <path
+        d="M197.66,197.66a8,8,0,0,1-11.32,0L72,83.31V168a8,8,0,0,1-16,0V64a8,8,0,0,1,8-8H168a8,8,0,0,1,0,16H83.31L197.66,186.34A8,8,0,0,1,197.66,197.66Z"
+      ></path>
+    </svg>
+    <svg
+      class="absolute right-0 top-0"
+      xmlns="http://www.w3.org/2000/svg"
+      width="48"
+      height="48"
+      fill="#71717A"
+      viewBox="0 0 256 256"
+    >
+      <path
+        d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"
+      ></path>
+    </svg>
+    <svg
+      class="absolute left-0 bottom-0"
+      xmlns="http://www.w3.org/2000/svg"
+      width="48"
+      height="48"
+      fill="#71717A"
+      viewBox="0 0 256 256"
+    >
+      <path
+        d="M197.66,69.66,83.31,184H168a8,8,0,0,1,0,16H64a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v84.69L186.34,58.34a8,8,0,0,1,11.32,11.32Z"
+      ></path>
+    </svg>
+    <svg
+      class="absolute right-0 bottom-0"
+      xmlns="http://www.w3.org/2000/svg"
+      width="48"
+      height="48"
+      fill="#71717A"
+      viewBox="0 0 256 256"
+    >
+      <path
+        d="M200,88V192a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h84.69L58.34,69.66A8,8,0,0,1,69.66,58.34L184,172.69V88a8,8,0,0,1,16,0Z"
+      ></path>
+    </svg>
     <Contact
       v-motion
       :initial="{ opacity: 0, y: 100 }"
@@ -122,12 +170,12 @@
   <div class="h-60">
     <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-80"></div>
   </div>
-  <div class="w-full flex justify-center items-center">
-    <div
-      class="h-2 max-w-3xl w-full backdrop-invert backdrop-saturate-200 backdrop-hue-rotate-180"
-    ></div>
+
+  <div
+    class="lg:ml-20 lg:w-9/12 lg:p-12 m-1 bg-slate-900 hover:shadow-lg transition-all"
+  >
+    <div class="bg-slate-200 ring-zinc-500"><Skills /></div>
   </div>
-  <Skills />
   <div class="h-screen"></div>
   <div class="h-screen"></div>
   <div class="h-screen"></div>
