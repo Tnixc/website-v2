@@ -30,7 +30,7 @@
       }"
     >
       <div
-        class="bg-gradient-to-t from-zinc-300/40 to-zinc-50 border-4 lg:p-12 p-6 shadow-xl w-full md:backdrop-blur-none backdrop-blur-md"
+        class="bg-gradient-to-t from-zinc-300/60 to-zinc-50 border-4 lg:p-12 p-6 shadow-xl w-full md:backdrop-blur-none backdrop-blur-md"
       >
         <div class="flex gap-2 text-lg flex-wrap">
           <span>
@@ -51,7 +51,7 @@
               alt=""
           /></span>
         </div>
-        <p class="pt-4">
+        <p class="pt-4 text-zinc-600">
           I'm a 15 year old high school student from Hong Kong living in Canada.
           I enjoy video games, coding, reading books and webcomics, watching
           anime, and doing 2D and 3D art. I started webdev around 2022, but

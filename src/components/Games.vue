@@ -22,6 +22,7 @@
       </p>
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Cities Skylines 2</p>
     </div>
+    <span class="block pt-4 text-zinc-600">Inactive: Ultrakill, hollow knight, celeste, besiege, polybridge series</span>
   </div>
 </template>
 <style scoped>
