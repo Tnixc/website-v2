@@ -169,10 +169,10 @@
       <TailwindCard />
     </div>
     <div class="mx-3 bg-white p-2 text-xl w-fit mb-3">
-      I also tried out three.js as you can see in the rotating models above
+      I also tried out three.js as you can see in the rotating models above (hover)
     </div>
     <Tools />
-    
+
   </div>
 </template>
 <script lang="ts">
