@@ -172,7 +172,16 @@
   </div>
 
   <div
-    class="lg:ml-20 lg:w-9/12 lg:p-12 m-1 bg-slate-900 hover:shadow-lg transition-all"
+    class="lg:ml-20 lg:w-9/12 lg:p-12 m-1 bg-slate-900 hover:shadow-lg transition-all relative"
+    v-motion
+    :initial="{ opacity: 0 }"
+    :visibleOnce="{
+      opacity: 1,
+      transition: {
+        type: 'keyframes',
+        ease: 'linear',
+      },
+    }"
   >
     <div class="bg-slate-200 ring-zinc-500"><Skills /></div>
   </div>

@@ -8,7 +8,7 @@
       y: 0,
       transition: {
         type: 'keyframes',
-        ease: 'ease-in-out',
+        ease: 'linear',
         delay: 500,
       },
     }"
@@ -17,7 +17,7 @@
   </div>
   <p class="backdrop-blur-md lg:backdrop-blur-none text-lg p-12">
     I mainly do UI/UX design and Front-end development, but I would like to
-    learn more about how js frameworks and web technologies work unde the hood.
+    learn more about how js frameworks and web technologies work under the hood.
     Gonna learn how to do SSR one day but that day is not today.
   </p>
   <div class="">
