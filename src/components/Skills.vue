@@ -172,6 +172,7 @@
       I also tried out three.js as you can see in the rotating models above
     </div>
     <Tools />
+    
   </div>
 </template>
 <script lang="ts">
