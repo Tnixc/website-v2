@@ -1,9 +1,8 @@
 <template>
-  <div class="w-full h-40 bg-zinc-50 flex items-center justify-center pr-80">
-    <div class="bg-zinc-200 h-20 w-full flex p-6 gap-6">
+    <div class="backdrop-invert backdrop-saturate-200 backdrop-hue-rotate-180 lg:h-20 w-full lg:flex lg:flex-row flex-col p-6 gap-6">
       <div class="flex items-center gap-2 p-2">
         <svg
-          class="w-10 h-10 text-black fill-black"
+          class="w-6 text-slate-200 fill-slate-200"
           role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
@@ -12,14 +11,14 @@
             d="M24,1.61H14.06L12,5.16,9.94,1.61H0L12,22.39ZM12,14.08,5.16,2.23H9.59L12,6.41l2.41-4.18h4.43Z"
           />
         </svg>
-        <p class="text-black text-xl">Made with Vue</p>
+        <p class="text-slate-200 text-lg">Made with Vue</p>
       </div>
       <div class="flex items-center gap-2 p-2">
         <svg
           role="img"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
-          class="w-10 h-10 text-black fill-black"
+          class="w-6 text-slate-200 fill-slate-200"
         >
           <title>GitHub</title>
           <path
@@ -29,16 +28,15 @@
         <a
           href="https://github.com/Tnixc/website-v2"
           target="_blank"
-          class="text-black text-xl underline decoration-4"
+          class="text-slate-200 text-lg underline decoration-2"
           >Source On Github</a
         >
       </div>
       <div class="flex flex-col justify-center gap-2 p-2">
-        <p class="text-xl">Latest Commit: <span v-html="sha"></span></p>
-        <p class="opacity-70">Last updated on <span v-html="d"></span></p>
+        <p class="text-lg text-slate-200">Latest Commit: <span v-html="sha"></span></p>
+        <p class="opacity-70 text-slate-200 text-md">Last updated on <span v-html="d"></span></p>
       </div>
     </div>
-  </div>
 </template>
 <script lang="ts">
 export default {
