@@ -78,12 +78,14 @@
   </div>
   <Scroller />
   <Title />
-  <div class="h-40">
-    <div class="ml-32 lg:ml-96 w-0.5 h-full striped translate-x-4"></div>
+  <div class="h-60">
+    <div
+      class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-6 mt-4"
+    ></div>
   </div>
-  <a href="" id="About"></a>
-  <div class="h-40">
-    <div class="ml-32 lg:ml-96 w-0.5 h-full striped translate-x-4"></div>
+  <a id="About"></a>
+  <div class="h-60">
+    <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-6"></div>
   </div>
   <div
     class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500"
@@ -92,12 +94,14 @@
     <Games />
   </div>
 
-  <div class="h-40">
-    <div class="ml-32 lg:ml-96 w-0.5 h-full striped translate-x-40"></div>
+  <div class="h-60">
+    <div
+      class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-96 mt-4"
+    ></div>
   </div>
   <a id="Contact"></a>
-  <div class="h-40">
-    <div class="ml-32 lg:ml-96 w-0.5 h-full striped translate-x-40"></div>
+  <div class="h-60">
+    <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-96"></div>
   </div>
   <div
     class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500 bg-zinc-100/80 relative"
@@ -164,15 +168,16 @@
     />
   </div>
   <div class="h-60">
-    <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-80"></div>
+    <div
+      class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-80 mt-4"
+    ></div>
   </div>
   <a id="Skills"></a>
   <div class="h-60">
     <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-80"></div>
   </div>
-
   <div
-    class="lg:ml-20 lg:w-9/12 lg:p-12 m-1 bg-slate-900 hover:shadow-lg transition-all relative"
+    class="lg:ml-20 lg:w-9/12 lg:p-12 m-1 bg-slate-900 hover:shadow-lg transition-all ring-2 ring-slate-600 ring-offset-8"
     v-motion
     :initial="{ opacity: 0 }"
     :visibleOnce="{
@@ -185,11 +190,20 @@
   >
     <div class="bg-slate-200 ring-zinc-500"><Skills /></div>
   </div>
-  <div class="h-screen"></div>
-  <div class="h-screen"></div>
-  <div class="h-screen"></div>
-  <div class="h-screen"></div>
-  <div class="h-screen"></div>
+  <div class="h-60">
+    <div
+      class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-20 mt-4"
+    ></div>
+  </div>
+  <a id="Projects"></a>
+  <div class="h-60">
+    <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-20"></div>
+  </div>
+  <div
+    class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500"
+  >
+    <Projects />
+  </div>
   <Footer />
 </template>
 
@@ -201,7 +215,7 @@ import About from "@/components/About.vue";
 import Games from "@/components/Games.vue";
 import Contact from "@/components/Contact.vue";
 import Skills from "@/components/Skills.vue";
-
+import Projects from "@/components/Projects.vue";
 // import BG from "@/components/BG.vue";
 // import Footer from "@/components/Footer.vue";
 const BG = defineAsyncComponent(() => import("@/components/BG.vue"));
