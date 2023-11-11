@@ -60,7 +60,7 @@
         Latest Commit: <span v-html="sha"></span>
       </p>
       <p class="opacity-70 text-slate-200 text-md">
-        Last updated on <span v-html="d"></span>
+        <span v-html="d"></span>
       </p>
     </div>
     <p class="px-2 ml-auto mr-10 text-pink-400 text-xl">
@@ -88,11 +88,49 @@ export default {
     function convertDate(timestamp: string): string {
       const date = new Date(timestamp);
 
-      const day = date.getUTCDate().toString().padStart(2, "0");
-      const month = (date.getUTCMonth() + 1).toString().padStart(2, "0"); // Months are 0-based, so we add 1.
-      const year = date.getUTCFullYear();
+      const d = date.getUTCDate().toString().padStart(2, "0");
+      const m = (date.getUTCMonth() + 1).toString().padStart(2, "0"); // Months are 0-based, so we add 1.
+      const y = date.getUTCFullYear();
+      
+      function relativeDate(date) {
+  const diff = Math.round((new Date() - new Date(date)) / 1000);
 
-      return `${day}/${month}/${year}`;
+  const minute = 60;
+  const hour = minute * 60;
+  const day = hour * 24;
+  const week = day * 7;
+  const month = day * 30;
+  const year = month * 12;
+
+  if (diff < 30) {
+    return "just now";
+  } else if (diff < minute) {
+    return diff + " seconds ago";
+  } else if (diff < 2 * minute) {
+    return "a minute ago";
+  } else if (diff < hour) {
+    return Math.floor(diff / minute) + " minutes ago";
+  } else if (Math.floor(diff / hour) == 1) {
+    return "1 hour ago";
+  } else if (diff < day) {
+    return Math.floor(diff / hour) + " hours ago";
+  } else if (diff < day * 2) {
+    return "yesterday";
+  } else if (diff < week) {
+    return week + " days ago";
+  } else if (diff < month) {
+    return Math.floor(diff / week) + " weeks ago";
+  } else if (diff < year) {
+    return Math.floor(diff / month) + " months ago";
+  } else {
+    return Math.floor(diff / year) + " years ago";
+  }
+}
+    
+
+      const relative = relativeDate(date)
+
+      return `Last updated ${relative}, on ${d}/${m}/${y}`;
     }
 
     update.call(this);
