@@ -15,13 +15,13 @@
   >
     <h1 class="bg-cyan-300/20 backdrop-blur-sm h-30 w-fit"># Skills</h1>
   </div>
-  <p class="backdrop-blur-md lg:backdrop-blur-none text-lg p-12">
+  <p class="backdrop-blur-md lg:backdrop-blur-none text-lg p-12 bg-slate-200/80 border-l-4 border-slate-600">
     I mainly do UI/UX design and Front-end development, but I would like to
     learn more about how js frameworks and web technologies work under the hood.
     Gonna learn how to do SSR one day but that day is not today.
   </p>
   <div class="">
-    <h2 class="text-4xl pt-10 pl-10 bg-slate-900 text-zinc-50">## Languages</h2>
+    <h2 class="text-4xl pt-10 pl-10 border-l-4 border-indigo-600 bg-indigo-300/50">## Languages</h2>
     <div id="cards" class="py-4 items-center justify-center">
       <div class="card">
         <div class="card-content">
@@ -161,18 +161,17 @@
         </div>
       </div>
     </div>
-    <h2 class="text-4xl pt-10 pl-10 bg-slate-900 text-zinc-50">
+    <h2 class="text-4xl pt-10 pl-10 border-l-4 border-indigo-600 bg-indigo-300/50">
       ## Frameworks / Libraries
     </h2>
     <div class="flex flex-wrap p-2 gap-2 bg-zinc-200 m-1">
       <VueCard />
       <TailwindCard />
     </div>
-    <div class="mx-3 bg-white p-2 text-xl w-fit mb-3">
+    <div class="mx-3 bg-zinc-100 p-2 text-xl w-fit mb-3">
       I also tried out three.js as you can see in the rotating models above (hover)
     </div>
     <Tools />
-
   </div>
 </template>
 <script lang="ts">

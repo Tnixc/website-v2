@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-4xl pt-10 pl-10 bg-slate-900 text-zinc-50">
+  <h2 class="text-4xl pt-10 pl-10 border-l-4 border-indigo-600 bg-indigo-300/50">
     ## Tools / Apps
   </h2>
   <div class="bg-zinc-200 p-12 gap-4 flex flex-wrap">

@@ -110,7 +110,7 @@
     <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-80"></div>
   </div>
   <div
-    class="lg:ml-20 lg:w-9/12 lg:p-12 m-1 bg-slate-900 hover:shadow-lg transition-all ring-2 ring-slate-600 ring-offset-8"
+    class="lg:ml-20 lg:w-9/12 lg:p-12 m-1 bg-slate-300/50 hover:shadow-lg transition-all ring-2 ring-slate-600 ring-offset-8"
     v-motion
     :initial="{ opacity: 0 }"
     :enter="{
@@ -121,7 +121,7 @@
       },
     }"
   >
-    <div class="bg-slate-200 ring-zinc-500"><Skills /></div>
+    <div class=" ring-zinc-500"><Skills /></div>
   </div>
   <div class="h-60">
     <div
