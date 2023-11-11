@@ -138,9 +138,10 @@
     <Projects />
   </div>
   <div class="h-80"></div>
-  <Footer />
+  <Footer  class="z-[999]"/>
   <div
-    class="fixed hidden lg:flex flex-col h-screen right-5 top-0 p-7 justify-around z-[999]"
+    id="navbar"
+    class="fixed top-0 right-0 left-0 flex justify-around p-2 bg-slate-50/80 flex-col backdrop-blur-md duration-300 shadow-lg lg:left-auto lg:bottom-0 lg:right-10 lg:bg-transparent lg:backdrop-blur-sm lg:shadow-none"
   >
     <a
       v-motion
@@ -228,9 +229,10 @@ const Projects = defineAsyncComponent(
 const backgroundPosition = ref("right 0px");
 
 onMounted(() => {
-  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("scroll", parallax);
+  window.addEventListener("scroll", nav);
 });
-function handleScroll() {
+function parallax() {
   const scrollY = window.scrollY;
   const limit = Math.max(
     document.body.scrollHeight,
@@ -241,6 +243,34 @@ function handleScroll() {
   );
   const translateY = ((scrollY * 1000) / limit) * 0.58;
   backgroundPosition.value = `right ${-translateY}px`;
+}
+let lastScroll = 0;
+function nav() {
+  const scrollY = window.scrollY;
+  const navbar = document.getElementById("navbar")!;
+  if (
+    Math.max(
+      document.documentElement.clientWidth || 0,
+      window.innerWidth || 0
+    ) < 1024
+  ) {
+    if (scrollY > lastScroll) {
+      navbar.style.top = "-100%";
+      lastScroll = scrollY;
+    }
+    if (scrollY + 100 < lastScroll) {
+      navbar.style.top = "0";
+      lastScroll = scrollY;
+    }
+  }
+  if (
+    Math.max(
+      document.documentElement.clientWidth || 0,
+      window.innerWidth || 0
+    ) > 1024
+  ) {
+    navbar.style.top = "0";
+  }
 }
 </script>
 <script lang="ts">

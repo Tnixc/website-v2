@@ -1,6 +1,6 @@
 <template>
   <div
-    class="backdrop-invert backdrop-saturate-200 backdrop-hue-rotate-180 lg:h-20 w-full lg:flex lg:flex-row flex-col p-6 gap-6"
+    class="absolute backdrop-invert backdrop-saturate-200 backdrop-hue-rotate-180 lg:h-20 w-full lg:flex lg:flex-row flex-col p-6 gap-6 z-[999]"
   >
     <div class="flex items-center gap-2 p-2">
       <svg
@@ -46,8 +46,12 @@
       >
     </div>
     <div class="flex items-center gap-2 p-2">
-      <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"         class="w-6 text-slate-200 fill-slate-200"
->
+      <svg
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 text-slate-200 fill-slate-200"
+      >
         <title>Netlify</title>
         <path
           d="M6.49 19.04h-.23L5.13 17.9v-.23l1.73-1.71h1.2l.15.15v1.2L6.5 19.04ZM5.13 6.31V6.1l1.13-1.13h.23L8.2 6.68v1.2l-.15.15h-1.2L5.13 6.31Zm9.96 9.09h-1.65l-.14-.13v-3.83c0-.68-.27-1.2-1.1-1.23-.42 0-.9 0-1.43.02l-.07.08v4.96l-.14.14H8.9l-.13-.14V8.73l.13-.14h3.7a2.6 2.6 0 0 1 2.61 2.6v4.08l-.13.14Zm-8.37-2.44H.14L0 12.82v-1.64l.14-.14h6.58l.14.14v1.64l-.14.14Zm17.14 0h-6.58l-.14-.14v-1.64l.14-.14h6.58l.14.14v1.64l-.14.14ZM11.05 6.55V1.64l.14-.14h1.65l.14.14v4.9l-.14.14h-1.65l-.14-.13Zm0 15.81v-4.9l.14-.14h1.65l.14.13v4.91l-.14.14h-1.65l-.14-.14Z"
@@ -91,44 +95,43 @@ export default {
       const d = date.getUTCDate().toString().padStart(2, "0");
       const m = (date.getUTCMonth() + 1).toString().padStart(2, "0"); // Months are 0-based, so we add 1.
       const y = date.getUTCFullYear();
-      
+
       function relativeDate(date) {
-  const diff = Math.round((new Date() - new Date(date)) / 1000);
+        const diff = Math.round((new Date() - new Date(date)) / 1000);
 
-  const minute = 60;
-  const hour = minute * 60;
-  const day = hour * 24;
-  const week = day * 7;
-  const month = day * 30;
-  const year = month * 12;
+        const minute = 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+        const week = day * 7;
+        const month = day * 30;
+        const year = month * 12;
 
-  if (diff < 30) {
-    return "just now";
-  } else if (diff < minute) {
-    return diff + " seconds ago";
-  } else if (diff < 2 * minute) {
-    return "a minute ago";
-  } else if (diff < hour) {
-    return Math.floor(diff / minute) + " minutes ago";
-  } else if (Math.floor(diff / hour) == 1) {
-    return "1 hour ago";
-  } else if (diff < day) {
-    return Math.floor(diff / hour) + " hours ago";
-  } else if (diff < day * 2) {
-    return "yesterday";
-  } else if (diff < week) {
-    return week + " days ago";
-  } else if (diff < month) {
-    return Math.floor(diff / week) + " weeks ago";
-  } else if (diff < year) {
-    return Math.floor(diff / month) + " months ago";
-  } else {
-    return Math.floor(diff / year) + " years ago";
-  }
-}
-    
+        if (diff < 30) {
+          return "just now";
+        } else if (diff < minute) {
+          return diff + " seconds ago";
+        } else if (diff < 2 * minute) {
+          return "a minute ago";
+        } else if (diff < hour) {
+          return Math.floor(diff / minute) + " minutes ago";
+        } else if (Math.floor(diff / hour) == 1) {
+          return "1 hour ago";
+        } else if (diff < day) {
+          return Math.floor(diff / hour) + " hours ago";
+        } else if (diff < day * 2) {
+          return "yesterday";
+        } else if (diff < week) {
+          return week + " days ago";
+        } else if (diff < month) {
+          return Math.floor(diff / week) + " weeks ago";
+        } else if (diff < year) {
+          return Math.floor(diff / month) + " months ago";
+        } else {
+          return Math.floor(diff / year) + " years ago";
+        }
+      }
 
-      const relative = relativeDate(date)
+      const relative = relativeDate(date);
 
       return `Last updated ${relative}, on ${d}/${m}/${y}`;
     }
