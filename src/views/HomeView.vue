@@ -135,7 +135,7 @@
   <div
     class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500 backdrop-blur-lg lg:backdrop-blur-0"
   >
-    <deferred :once="true"> <Projects /></deferred>
+    <Projects />
   </div>
   <div class="h-80"></div>
   <Footer />
