@@ -31,10 +31,12 @@ export default {
 @font-face {
   font-family: "Geist Mono";
   src: url("https://pham.codes/d/GeistMonoVF.woff2") format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "Geist";
   src: url("https://pham.codes/d/GeistVF.woff2") format("woff2");
+  font-display: swap;
 }
 
 body {
