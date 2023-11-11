@@ -16,7 +16,7 @@
           <p class="p-2 font-xl">tnixxc@gmail.com</p>
         </div>
         <a
-          v-thover="{ borderWidth: 4, scale: 1.2 }"
+          v-thover="{ borderWidth: 4, scale: 1.2 ,invertColor:'false' ,borderColor: '#f59e0b' }"
           class="li p-2 bg-blue-50 flex items-center m-1 hover:shadow-md"
           href="https://twitter.com/_Tnixc"
           target="_blank"
@@ -31,7 +31,7 @@
         </a>
 
         <a
-          v-thover="{ borderWidth: 4, scale: 1.2 }"
+        v-thover="{ borderWidth: 4, scale: 1.2 ,invertColor:'false' ,borderColor: '#f59e0b' }"
           class="li p-2 bg-blue-50 flex items-center m-1 hover:shadow-md "
           href="https://github.com/Tnixc"
           target="_blank"

@@ -1,12 +1,12 @@
 <template>
   <div
-    class="flex border-b-4 border-cyan-600 hover:shadow-xl transition-all duration-300"
+    class="flex border-b-4 border-cyan-600 hover:shadow-xl transition-all duration-300 bg-teal-200"
     @mouseenter="startRotation"
     @mouseleave="stopRotation"
   >
     <div class="bg-blue-200/5 relative">
       <div
-        class="aspect-square bg-teal-400/50"
+        class="aspect-square bg-teal-200"
       >
         <div ref="container"></div>
         <div
