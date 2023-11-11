@@ -95,8 +95,9 @@ export default {
       const d = date.getUTCDate().toString().padStart(2, "0");
       const m = (date.getUTCMonth() + 1).toString().padStart(2, "0"); // Months are 0-based, so we add 1.
       const y = date.getUTCFullYear();
-
+      //@ts-ignore
       function relativeDate(date) {
+      //@ts-ignore
         const diff = Math.round((new Date() - new Date(date)) / 1000);
 
         const minute = 60;
