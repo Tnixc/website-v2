@@ -9,7 +9,7 @@
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">
         Minecraft - Mainly building but I played 1.8 pvp too
       </p>
-      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">OSU</p>
+      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">OSU std</p>
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Project Sekai</p>
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">
         Genshin Impact (Not really 🙏)

@@ -11,6 +11,10 @@
           <i class="p-2 scale-125 fa-brands fa-discord"></i>
           <p class="p-2 font-xl">Tnixc</p>
         </div>
+        <div class="p-2 bg-blue-50 flex items-center m-1 hover:shadow-md">
+          <i class="p-2 scale-125 fa-solid fa-envelope"></i>
+          <p class="p-2 font-xl">tnixxc@gmail.com</p>
+        </div>
         <a
           v-thover="{ borderWidth: 4, scale: 1.2 }"
           class="li p-2 bg-blue-50 flex items-center m-1 hover:shadow-md"
@@ -19,26 +23,22 @@
         >
           <i class="p-2 scale-125 fa-brands fa-x-twitter"></i>
           <p
-            class="p-2 font-xl underline underline-offset-4 decoration-2 decoration-blue-500"
+            class="p-2 font-xl "
           >
             _Tnixc
           </p>
-          <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square"></i>
+          <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square "></i>
         </a>
-        <div class="p-2 bg-blue-50 flex items-center m-1 hover:shadow-md">
-          <i class="p-2 scale-125 fa-solid fa-envelope"></i>
-          <p class="p-2 font-xl">tnixxc@gmail.com</p>
-        </div>
 
         <a
           v-thover="{ borderWidth: 4, scale: 1.2 }"
-          class="li p-2 bg-blue-50 flex items-center m-1 hover:shadow-md"
+          class="li p-2 bg-blue-50 flex items-center m-1 hover:shadow-md "
           href="https://github.com/Tnixc"
           target="_blank"
         >
           <i class="p-2 scale-125 fa-brands fa-github"></i>
           <p
-            class="p-2 font-xl underline underline-offset-4 decoration-2 decoration-blue-500"
+            class="p-2 font-xl "
           >
             Tnixc
           </p>
