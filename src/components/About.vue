@@ -54,11 +54,11 @@
         <p class="pt-4 text-slate-700">
           I'm a 15 year old high school student from Hong Kong living in Canada.
           I enjoy video games, coding, reading books and webcomics, watching
-          anime, and doing 2D and 3D art. I started webdev around 2022, but
+          anime, listening to lots of jpop, touhou songs, vocaloids and all that, and doing 2D and 3D art. I started webdev around 2022, but
           honestly time has been blur since 2020 so I'm not sure.
-          <br /><br />I like trains and bikes(a huge fan of dutch urban design),
+          <br /><br />I also like trains and bikes(a huge fan of dutch urban design),
           public transit, typography, and open source. I also like chilling in
-          IKEA and hiking :3.
+          IKEA and hiking :3
         </p>
       </div>
     </div>
