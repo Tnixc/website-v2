@@ -22,7 +22,7 @@
   </p>
   <div class="">
     <h2 class="text-4xl pt-10 pl-10 border-l-4 border-indigo-600 bg-indigo-300/50">## Languages</h2>
-    <div id="cards" class="py-4 items-center justify-center">
+    <div id="cards" class="items-center justify-center p-4 border-4 border-slate-600 border-r-0">
       <div class="card">
         <div class="card-content">
           <div class="h-full flex items-center">
@@ -216,7 +216,7 @@ export default {
   @apply opacity-100;
 }
 .card {
-  @apply flex h-48 flex-col relative hover:before:opacity-100 before:z-[3] after:z-[1] hover:shadow-lg transition-all duration-500 backdrop-blur-sm;
+  @apply flex-grow flex h-48 flex-col relative hover:before:opacity-100 before:z-[3] after:z-[1] hover:shadow-lg transition-all duration-500 backdrop-blur-sm;
   width: calc(1 / 3);
   min-width: 22rem;
 }
