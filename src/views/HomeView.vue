@@ -121,7 +121,7 @@
       },
     }"
   >
-    <div class=" ring-zinc-500"><Skills /></div>
+    <div class="ring-zinc-500"><Skills /></div>
   </div>
   <div class="h-60">
     <div
@@ -135,78 +135,78 @@
   <div
     class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500 backdrop-blur-lg lg:backdrop-blur-0"
   >
-    <Projects />
+    <deferred :once="true"> <Projects /></deferred>
   </div>
   <div class="h-80"></div>
   <Footer />
   <div
-  class="fixed hidden lg:flex flex-col h-screen right-5 top-0 p-7 justify-around z-[999]"
->
-  <a
-    v-motion
-    :initial="{ opacity: 0, y: 100 }"
-    :enter="{
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: 'keyframes',
-        ease: 'ease-in-out',
-        delay: 200,
-      },
-    }"
-    @click="scrollToSection('About')"
-    class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
-    >About</a
+    class="fixed hidden lg:flex flex-col h-screen right-5 top-0 p-7 justify-around z-[999]"
   >
-  <a
-    v-motion
-    :initial="{ opacity: 0, y: 100 }"
-    :enter="{
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: 'keyframes',
-        ease: 'ease-in-out',
-        delay: 400,
-      },
-    }"
-    @click="scrollToSection('Contact')"
-    class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
-    >Contact / Links</a
-  >
-  <a
-    v-motion
-    :initial="{ opacity: 0, y: 100 }"
-    :enter="{
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: 'keyframes',
-        ease: 'ease-in-out',
-        delay: 600,
-      },
-    }"
-    @click="scrollToSection('Skills')"
-    class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
-    >Skills / Tools</a
-  >
-  <a
-    v-motion
-    :initial="{ opacity: 0, y: 100 }"
-    :enter="{
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: 'keyframes',
-        ease: 'ease-in-out',
-        delay: 800,
-      },
-    }"
-    @click="scrollToSection('Projects')"
-    class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
-    >Projects</a
-  >
-</div>
+    <a
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: 'keyframes',
+          ease: 'ease-in-out',
+          delay: 200,
+        },
+      }"
+      @click="scrollToSection('About')"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
+      >About</a
+    >
+    <a
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: 'keyframes',
+          ease: 'ease-in-out',
+          delay: 400,
+        },
+      }"
+      @click="scrollToSection('Contact')"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
+      >Contact / Links</a
+    >
+    <a
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: 'keyframes',
+          ease: 'ease-in-out',
+          delay: 600,
+        },
+      }"
+      @click="scrollToSection('Skills')"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
+      >Skills / Tools</a
+    >
+    <a
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: 'keyframes',
+          ease: 'ease-in-out',
+          delay: 800,
+        },
+      }"
+      @click="scrollToSection('Projects')"
+      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
+      >Projects</a
+    >
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -222,7 +222,9 @@ import Skills from "@/components/Skills.vue";
 // import Footer from "@/components/Footer.vue";
 const BG = defineAsyncComponent(() => import("@/components/BG.vue"));
 const Footer = defineAsyncComponent(() => import("@/components/Footer.vue"));
-const Projects = defineAsyncComponent(() => import("@/components/Projects.vue"));
+const Projects = defineAsyncComponent(
+  () => import("@/components/Projects.vue")
+);
 const backgroundPosition = ref("right 0px");
 
 onMounted(() => {
