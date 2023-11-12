@@ -67,8 +67,10 @@
       >
         <h1 class="text-2xl">Website v1</h1>
         <p class="text-zinc-500 pt-2">
-          An old version of my website. It was pretty bad. Made with vue
+          An old version of my website. It was pretty bad. 
         </p>
+        <a class="underline" href="https://old-v1.vercel.app/" target="_blank">https://old-v1.vercel.app/</a>
+        <br>
         <a class="underline" target="_blank" href="https://github.com/Tnixc/website"
           >https://github.com/Tnixc/website</a
         >
