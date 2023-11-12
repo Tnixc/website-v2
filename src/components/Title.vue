@@ -3,16 +3,34 @@
     class="h-screen lg:w-1/2 w-11/12 bg-slate-900/40 backdrop-invert backdrop-hue-rotate-180 backdrop-saturate-200 flex flex-col justify-center border-r-4 border-b-4 border-slate-50/80 relative"
   >
     <h2 class="text-slate-500 w-fit pl-8 text-5xl">Haiii</h2>
-    <h1 class="text-white w-fit pl-8 lg:text-9xl text-7xl">
-      I'm Tnixc
-    </h1>
+    <h1 class="text-white w-fit pl-8 lg:text-9xl text-7xl">I'm Tnixc</h1>
     <h2 class="text-slate-500 w-fit pl-8 text-3xl h-40 lg:h-auto">
       Just a 15y/o <span class="text-white">{{ typedText }}</span>
       <span class="text-[#75BFFF] underscore" :class="{ flash: showUnderscore }"
         >_</span
       >
     </h2>
-    <h2 class="pl-8 text-slate-500 text-3xl w-fit backdrop-blur-md">Shipping bad code 24/7</h2>
+    <h2 class="pl-8 text-slate-500 text-3xl w-fit backdrop-blur-md">
+      Shipping bad code 24/7
+    </h2>
+    <a
+      href="https://blog.tnixc.space"
+      target="_blank"
+      class="text-2xl ml-20 my-4 p-4 px-10 rounded-xl shadow-2xl ring-blue-300 ring-2 text-black bg-gradient-to-tr from-blue-300 via-indigo-400 to-pink-400 w-fit flex items-center gap-4"
+      v-thover="{ borderWidth: 4, scale: 1.2 ,invertColor:'false' ,borderColor: '#f59e0b' }"
+      >Blog
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+        fill="#000000"
+        viewBox="0 0 256 256"
+        class="h-10"
+      >
+        <path
+          d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+        ></path></svg
+    ></a>
     <p class="absolute bottom-10 left-1/2 -translate-x-1/2 text-xl text-white">
       scroll to begin
     </p>

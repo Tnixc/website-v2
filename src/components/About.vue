@@ -51,8 +51,8 @@
               alt=""
           /></span>
         </div>
-        <p class="pt-4 text-slate-700">
-          I'm a 15 year old high school student from Hong Kong living in Canada.
+        <p class="text-lg pt-4 text-slate-500">
+          I'm a <p class="inline text-slate-900">15 year old high school student from Hong Kong living in Canada.</p> 
           I enjoy video games, coding, reading books and webcomics, watching
           anime, listening to lots of jpop, touhou songs, vocaloids and all that, and doing 2D and 3D art. I started webdev around 2022, but
           honestly time has been blur since 2020 so I'm not sure.
@@ -97,6 +97,9 @@ h1:hover {
 }
 p {
   font-family: "Geist", sans-serif;
-  font-variation-settings: "wght" 128;
+  font-variation-settings: "wght" 100;
+}
+p > p{
+  font-variation-settings: "wght" 140;
 }
 </style>
