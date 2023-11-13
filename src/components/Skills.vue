@@ -179,6 +179,9 @@
       <VueCard />
       <TailwindCard />
     </div>
+    <div class="mx-3 mb-3 w-fit bg-emerald-300 p-2 text-xl">
+        I did one project with Nuxt but I can't say I'm good with it.
+    </div>
     <div class="mx-3 mb-3 w-fit bg-zinc-100 p-2 text-xl">
       I also tried out three.js as you can see in the rotating models above
       (hover)
