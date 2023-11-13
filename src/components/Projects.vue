@@ -21,7 +21,7 @@
             >https://blog.tnixc.space</a
           >
         </div>
-        <div class="blog h-full shadow-xl"></div>
+        <div class="blog img"></div>
       </div>
     </div>
     <div
@@ -55,7 +55,7 @@
             >https://elemental-mocha.vercel.app</a
           >
         </div>
-        <div class="elemental h-full shadow-xl"></div>
+        <div class="elemental img"></div>
       </div>
     </div>
     <div class="flex flex-col gap-2 col-span-2">
@@ -149,21 +149,14 @@
   font-family: "Geist", sans-serif;
   font-variation-settings: "wght" 128;
 }
+.img{
+  @apply w-full h-full bg-cover bg-left-top bg-no-repeat;
+}
 .elemental {
   background-image: url("../assets/elemental.webp");
-  background-size: cover;
-  background-position: top left;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
 }
 .blog {
   background-image: url("../assets/blog.webp");
-  background-size: cover;
-  background-position: top left;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
 }
 .catppuccin {
   background-image: url("../assets/catppuccin.webp");
