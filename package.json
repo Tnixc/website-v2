@@ -17,7 +17,8 @@
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5",
     "three": "^0.158.0",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-router": "latest"
   },
   "devDependencies": {
     "@tsconfig/node18": "^18.2.2",
