@@ -16,7 +16,7 @@
     <a
       href="https://blog.tnixc.space"
       target="_blank"
-      class="text-2xl ml-20 my-4 p-4 px-10 rounded-xl shadow-2xl ring-blue-300/20 ring-2 text-white bg-gradient-to-tr from-blue-300/10 via-indigo-400/20 to-pink-400/20 w-fit flex items-center gap-4 hover:translate-y-2 transition-all hover:shadow-md"
+      class="text-2xl ml-20 mt-10 p-4 px-10 rounded-xl shadow-2xl ring-blue-300/20 ring-2 text-white bg-gradient-to-tr from-blue-300/10 via-indigo-400/20 to-pink-400/20 w-fit flex items-center gap-4 hover:translate-y-1 transition-all hover:shadow-md"
       v-thover="{ borderWidth: 4, scale: 1.2 ,invertColor:'false' ,borderColor: '#f59e0b' }"
       >Blog
       <svg
