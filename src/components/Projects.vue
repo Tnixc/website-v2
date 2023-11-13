@@ -5,7 +5,7 @@
     class="mt-10 p-2 bg-zinc-200 gap-2 flex flex-col lg:grid lg:grid-cols-3 lg:auto-rows-auto"
   >
     <div
-      class="h-full border-2 border-blue-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden lg:col-span-3"
+      class="border-2 border-blue-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden lg:col-span-3 h-full"
     >
       <div class="grid lg:grid-cols-2 h-full">
         <div class="p-8">
