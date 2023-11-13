@@ -16,10 +16,12 @@
     :invertColor="true"
     :borderColor="'white'"
   />
-  <HomeView />
+  <!-- <HomeView /> -->
+  <RouterView />
 </template>
 <script lang="ts">
 import HomeView from "@/views/HomeView.vue";
+import { RouterView } from "vue-router";
 export default {
   components: {
     HomeView,
