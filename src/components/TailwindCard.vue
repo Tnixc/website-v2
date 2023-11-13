@@ -1,18 +1,18 @@
 <template>
   <div
-    class="flex border-b-4 border-cyan-600 hover:shadow-xl transition-all duration-300 bg-teal-200"
+    class="flex border-b-4 border-cyan-600 bg-teal-200 transition-all duration-300 hover:shadow-xl"
     @mouseenter="startRotation"
     @mouseleave="stopRotation"
   >
-    <div class="bg-blue-200/5 relative">
+    <div class="relative bg-blue-200/5">
       <div class="aspect-square bg-teal-200">
         <div ref="container"></div>
         <div
-          class="absolute inset-10 bg-blue-500 -z-10 rounded-full blur-xl"
+          class="absolute inset-10 -z-10 rounded-full bg-blue-500 blur-xl"
         ></div>
       </div>
     </div>
-    <div class="p-4 bg-cyan-400/50">
+    <div class="bg-cyan-400/50 p-4">
       <h3 class="text-3xl">Tailwind CSS</h3>
       <p class="text-teal-900">
         The objectively best way to write styles. <br />

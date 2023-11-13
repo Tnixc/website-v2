@@ -1,18 +1,18 @@
 <template>
   <div
-    class="flex border-b-4 border-green-600 hover:shadow-xl transition-all duration-300 bg-green-200"
+    class="flex border-b-4 border-green-600 bg-green-200 transition-all duration-300 hover:shadow-xl"
     @mouseenter="startRotation"
     @mouseleave="stopRotation"
   >
-    <div class="bg-green-200 relative">
+    <div class="relative bg-green-200">
       <div class="aspect-square">
         <div ref="container"></div>
         <div
-          class="absolute inset-10 bg-green-300/80 -z-10 rounded-full blur-xl"
+          class="absolute inset-10 -z-10 rounded-full bg-green-300/80 blur-xl"
         ></div>
       </div>
     </div>
-    <div class="p-4 bg-green-400/40">
+    <div class="bg-green-400/40 p-4">
       <h3 class="text-3xl">VueJS</h3>
       <p class="text-green-900">
         I've only ever tried Vue, but I'm loving it,<br />

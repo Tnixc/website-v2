@@ -1,10 +1,10 @@
 <template>
   <div
-    class="absolute backdrop-invert backdrop-saturate-200 backdrop-hue-rotate-180 lg:h-20 w-full lg:flex lg:flex-row flex-col p-6 gap-6 z-[999]"
+    class="absolute z-[999] w-full flex-col gap-6 p-6 backdrop-hue-rotate-180 backdrop-invert backdrop-saturate-200 lg:flex lg:h-20 lg:flex-row"
   >
     <div class="flex items-center gap-2 p-2">
       <svg
-        class="w-6 text-slate-200 fill-slate-200"
+        class="w-6 fill-slate-200 text-slate-200"
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@
         />
       </svg>
       <svg
-        class="w-6 text-slate-200 fill-slate-200"
+        class="w-6 fill-slate-200 text-slate-200"
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -24,14 +24,14 @@
           d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
         />
       </svg>
-      <p class="text-slate-200 text-lg">Made with Vue + Tailwind</p>
+      <p class="text-lg text-slate-200">Made with Vue + Tailwind</p>
     </div>
     <div class="flex items-center gap-2 p-2">
       <svg
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        class="w-6 text-slate-200 fill-slate-200"
+        class="w-6 fill-slate-200 text-slate-200"
       >
         <title>GitHub</title>
         <path
@@ -41,7 +41,7 @@
       <a
         href="https://github.com/Tnixc/website-v2"
         target="_blank"
-        class="text-slate-200 text-lg underline decoration-2"
+        class="text-lg text-slate-200 underline decoration-2"
         >Source On Github</a
       >
     </div>
@@ -50,25 +50,25 @@
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        class="w-6 text-slate-200 fill-slate-200"
+        class="w-6 fill-slate-200 text-slate-200"
       >
         <title>Netlify</title>
         <path
           d="M6.49 19.04h-.23L5.13 17.9v-.23l1.73-1.71h1.2l.15.15v1.2L6.5 19.04ZM5.13 6.31V6.1l1.13-1.13h.23L8.2 6.68v1.2l-.15.15h-1.2L5.13 6.31Zm9.96 9.09h-1.65l-.14-.13v-3.83c0-.68-.27-1.2-1.1-1.23-.42 0-.9 0-1.43.02l-.07.08v4.96l-.14.14H8.9l-.13-.14V8.73l.13-.14h3.7a2.6 2.6 0 0 1 2.61 2.6v4.08l-.13.14Zm-8.37-2.44H.14L0 12.82v-1.64l.14-.14h6.58l.14.14v1.64l-.14.14Zm17.14 0h-6.58l-.14-.14v-1.64l.14-.14h6.58l.14.14v1.64l-.14.14ZM11.05 6.55V1.64l.14-.14h1.65l.14.14v4.9l-.14.14h-1.65l-.14-.13Zm0 15.81v-4.9l.14-.14h1.65l.14.13v4.91l-.14.14h-1.65l-.14-.14Z"
         />
       </svg>
-      <p class="text-slate-200 text-lg">Hosted on netlify</p>
+      <p class="text-lg text-slate-200">Hosted on netlify</p>
     </div>
     <div class="flex flex-col justify-center gap-2 p-2">
       <p class="text-lg text-slate-200">
         Latest Commit: <span v-html="sha"></span>
       </p>
-      <p class="opacity-70 text-slate-200 text-md">
+      <p class="text-md text-slate-200 opacity-70">
         <span v-html="d"></span>
       </p>
     </div>
-    <p class="px-2 ml-auto mr-10 text-pink-400 text-xl">
-      Made with <i class="fill-pink-400 fa-solid fa-heart"></i>
+    <p class="ml-auto mr-10 px-2 text-xl text-pink-400">
+      Made with <i class="fa-solid fa-heart fill-pink-400"></i>
     </p>
   </div>
 </template>

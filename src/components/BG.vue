@@ -9,7 +9,7 @@
     viewBox="0 0 1701.8 1663.2"
     style="enable-background: new 0 0 1701.8 1663.2"
     xml:space="preserve"
-    class="fixed -z-50 inset-0"
+    class="fixed inset-0 -z-50"
   >
     <g>
       <path

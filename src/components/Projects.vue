@@ -1,13 +1,13 @@
 <template>
   <h1 class="text-7xl lg:text-9xl"># Projects</h1>
-  <h2 class="text-xl lg:text-5xl text-zinc-600">## The good stuff</h2>
+  <h2 class="text-xl text-zinc-600 lg:text-5xl">## The good stuff</h2>
   <div
-    class="mt-10 p-2 bg-zinc-200 gap-2 flex flex-col lg:grid lg:grid-cols-3 lg:auto-rows-auto"
+    class="mt-10 flex flex-col gap-2 bg-zinc-200 p-2 lg:grid lg:auto-rows-auto lg:grid-cols-3"
   >
     <div
-      class="border-2 border-blue-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden lg:col-span-3 h-full"
+      class="h-full overflow-hidden border-2 border-blue-600 bg-zinc-100 transition-all duration-500 hover:shadow-lg lg:col-span-3"
     >
-      <div class="grid lg:grid-cols-2 h-full">
+      <div class="grid h-full lg:grid-cols-2">
         <div class="p-8">
           <h1 class="text-2xl">Blog</h1>
           <p class="pt-2 text-zinc-500">
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div
-      class="row-span-1 h-full border-2 border-fuchsia-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-8"
+      class="row-span-1 h-full overflow-hidden border-2 border-fuchsia-600 bg-zinc-100 p-8 transition-all duration-500 hover:shadow-lg"
     >
       <div class="catppuccin py-6 drop-shadow-lg"></div>
       <h1 class="text-2xl">Maintainer at catppuccin</h1>
@@ -38,9 +38,9 @@
       >
     </div>
     <div
-      class="h-full border-2 border-indigo-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden lg:col-span-2"
+      class="h-full overflow-hidden border-2 border-indigo-600 bg-zinc-100 transition-all duration-500 hover:shadow-lg lg:col-span-2"
     >
-      <div class="grid lg:grid-cols-2 h-full">
+      <div class="grid h-full lg:grid-cols-2">
         <div class="p-8">
           <h1 class="text-2xl">Elemental</h1>
           <p class="pt-2 text-zinc-500">
@@ -58,12 +58,12 @@
         <div class="elemental img"></div>
       </div>
     </div>
-    <div class="flex flex-col gap-2 col-span-2">
+    <div class="col-span-2 flex flex-col gap-2">
       <div
-        class="h-full border-2 border-blue-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-4"
+        class="h-full overflow-hidden border-2 border-blue-600 bg-zinc-100 p-4 transition-all duration-500 hover:shadow-lg"
       >
         <h1 class="text-2xl">Website v2</h1>
-        <p class="text-zinc-500 pt-2">
+        <p class="pt-2 text-zinc-500">
           My personal website. This one. Who doesn't love a bit of recursion?
           Made with vue and tailwind
         </p>
@@ -72,10 +72,10 @@
         >
       </div>
       <div
-        class="h-full border-2 border-purple-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-4"
+        class="h-full overflow-hidden border-2 border-purple-600 bg-zinc-100 p-4 transition-all duration-500 hover:shadow-lg"
       >
         <h1 class="text-2xl">Website v1</h1>
-        <p class="text-zinc-500 pt-2">
+        <p class="pt-2 text-zinc-500">
           An old version of my website. It was pretty bad.
         </p>
         <a class="underline" href="https://old-v1.vercel.app/" target="_blank"
@@ -91,10 +91,10 @@
       </div>
     </div>
     <div
-      class="col-span-1 row-span-1 h-full border-2 border-purple-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-8 pb-0 flex flex-col justify-center"
+      class="col-span-1 row-span-1 flex h-full flex-col justify-center overflow-hidden border-2 border-purple-600 bg-zinc-100 p-8 pb-0 transition-all duration-500 hover:shadow-lg"
     >
       <h1 class="text-2xl">Dotfiles</h1>
-      <p class="text-zinc-500 pt-2">
+      <p class="pt-2 text-zinc-500">
         My personal config files for my macOS setup
       </p>
       <a class="underline" target="_blank" href="https://github.com/Tnixc/dots"
@@ -107,7 +107,7 @@
       />
     </div>
     <div
-      class="h-full border-2 border-violet-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden lg:col-span-1"
+      class="h-full overflow-hidden border-2 border-violet-600 bg-zinc-100 transition-all duration-500 hover:shadow-lg lg:col-span-1"
     >
       <div class="p-8">
         <h1 class="text-2xl">disc-collection</h1>
@@ -123,10 +123,10 @@
       </div>
     </div>
     <div
-      class="h-full border-2 border-purple-600 bg-zinc-100 hover:shadow-lg transition-all duration-500 overflow-hidden p-8 pb-0 flex flex-col justify-center col-span-2"
+      class="col-span-2 flex h-full flex-col justify-center overflow-hidden border-2 border-purple-600 bg-zinc-100 p-8 pb-0 transition-all duration-500 hover:shadow-lg"
     >
       <h1 class="text-2xl">UI-collection</h1>
-      <p class="text-zinc-500 pt-2">
+      <p class="pt-2 text-zinc-500">
         a repo where I recreate cool UI components from other websites. Mainly
         for fun. I would like to make a website to showcase it someday.
       </p>
@@ -150,7 +150,7 @@
   font-variation-settings: "wght" 128;
 }
 .img {
-  @apply w-full h-full bg-cover bg-left-top bg-no-repeat;
+  @apply h-full w-full bg-cover bg-left-top bg-no-repeat;
 }
 .elemental {
   background-image: url("../assets/elemental.webp");

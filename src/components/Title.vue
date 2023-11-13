@@ -1,22 +1,22 @@
 <template>
   <div
-    class="h-screen lg:w-1/2 w-11/12 bg-slate-900/40 backdrop-invert backdrop-hue-rotate-180 backdrop-saturate-200 flex flex-col justify-center border-r-4 border-b-4 border-slate-50/80 relative"
+    class="relative flex h-screen w-11/12 flex-col justify-center border-b-4 border-r-4 border-slate-50/80 bg-slate-900/40 backdrop-hue-rotate-180 backdrop-invert backdrop-saturate-200 lg:w-1/2"
   >
-    <h2 class="text-slate-500 w-fit pl-8 text-5xl">Haiii</h2>
-    <h1 class="text-white w-fit pl-8 lg:text-9xl text-7xl">I'm Tnixc</h1>
-    <h2 class="text-slate-500 w-fit pl-8 text-3xl h-40 lg:h-auto">
+    <h2 class="w-fit pl-8 text-5xl text-slate-500">Haiii</h2>
+    <h1 class="w-fit pl-8 text-7xl text-white lg:text-9xl">I'm Tnixc</h1>
+    <h2 class="h-40 w-fit pl-8 text-3xl text-slate-500 lg:h-auto">
       Just a 15y/o <span class="text-white">{{ typedText }}</span>
-      <span class="text-[#75BFFF] underscore" :class="{ flash: showUnderscore }"
+      <span class="underscore text-[#75BFFF]" :class="{ flash: showUnderscore }"
         >_</span
       >
     </h2>
-    <h2 class="pl-8 text-slate-500 text-3xl w-fit backdrop-blur-md">
+    <h2 class="w-fit pl-8 text-3xl text-slate-500 backdrop-blur-md">
       Shipping bad code 24/7
     </h2>
     <a
       href="https://blog.tnixc.space"
       target="_blank"
-      class="text-2xl ml-20 mt-10 p-4 px-10 rounded-xl shadow-2xl ring-blue-300/20 ring-2 text-white bg-gradient-to-tr from-blue-300/10 via-indigo-400/20 to-pink-400/20 w-fit flex items-center gap-4 hover:translate-y-1 transition-all hover:shadow-md"
+      class="ml-20 mt-10 flex w-fit items-center gap-4 rounded-xl bg-gradient-to-tr from-blue-300/10 via-indigo-400/20 to-pink-400/20 p-4 px-10 text-2xl text-white shadow-2xl ring-2 ring-blue-300/20 transition-all hover:translate-y-1 hover:shadow-md"
       v-thover="{
         borderWidth: 4,
         scale: 1.2,

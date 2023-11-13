@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div
-      class="p-1 bg-zinc-100/60 w-fit"
+      class="w-fit bg-zinc-100/60 p-1"
       v-motion
       :initial="{ opacity: 0, y: 100 }"
       :visibleOnce="{
@@ -14,7 +14,7 @@
       }"
       :delay="600"
     >
-      <h1 class="bg-zinc-200 text-7xl lg:text-9xl w-fit"># About</h1>
+      <h1 class="w-fit bg-zinc-200 text-7xl lg:text-9xl"># About</h1>
     </div>
     <div
       class=""
@@ -30,9 +30,9 @@
       }"
     >
       <div
-        class="bg-gradient-to-t from-zinc-300/60 to-zinc-50 border-4 lg:p-12 p-6 shadow-xl w-full md:backdrop-blur-none backdrop-blur-md"
+        class="w-full border-4 bg-gradient-to-t from-zinc-300/60 to-zinc-50 p-6 shadow-xl backdrop-blur-md md:backdrop-blur-none lg:p-12"
       >
-        <div class="flex gap-2 text-lg flex-wrap">
+        <div class="flex flex-wrap gap-2 text-lg">
           <span>
             <span>{{ TimeDiff }}</span> seconds old
           </span>
@@ -45,13 +45,13 @@
             ><img
               src="https://em-content.zobj.net/source/twitter/376/flag-hong-kong-sar-china_1f1ed-1f1f0.png"
               alt=""
-              class="w-6 inline" /><img
-              class="w-6 inline ml-2"
+              class="inline w-6" /><img
+              class="ml-2 inline w-6"
               src="https://em-content.zobj.net/source/twitter/376/flag-canada_1f1e8-1f1e6.png"
               alt=""
           /></span>
         </div>
-        <p class="text-lg pt-4 text-slate-500">
+        <p class="pt-4 text-lg text-slate-500">
           I'm a
           <span class="inline text-slate-900"
             >15 year old high school student from Hong Kong living in

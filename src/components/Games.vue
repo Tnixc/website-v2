@@ -1,26 +1,26 @@
 <template>
-  <h1 class="border-l-2 lg:p-6 p-4 text-5xl bg-violet-200 border-violet-500">
+  <h1 class="border-l-2 border-violet-500 bg-violet-200 p-4 text-5xl lg:p-6">
     ## Games
   </h1>
   <div
-    class="border-l-2 lg:p-6 p-4 bg-gradient-to-t from-indigo-300/30 to-violet-200 border-violet-300 border-b-zinc-50 border-b-2"
+    class="border-b-2 border-l-2 border-violet-300 border-b-zinc-50 bg-gradient-to-t from-indigo-300/30 to-violet-200 p-4 lg:p-6"
   >
-    <div class="flex gap-2 flex-wrap">
-      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">
+    <div class="flex flex-wrap gap-2">
+      <p class="bg-violet-50 p-4 ring-2 ring-violet-300">
         Minecraft - Mainly building but I played 1.8 pvp too
       </p>
-      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">OSU std</p>
-      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Project Sekai</p>
-      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">
+      <p class="bg-violet-50 p-4 ring-2 ring-violet-300">OSU std</p>
+      <p class="bg-violet-50 p-4 ring-2 ring-violet-300">Project Sekai</p>
+      <p class="bg-violet-50 p-4 ring-2 ring-violet-300">
         Genshin Impact (Not really 🙏)
       </p>
-      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Cyberpunk 2077</p>
-      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Va-11 Hall-A</p>
-      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Bauldurs Gate 3</p>
-      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">
+      <p class="bg-violet-50 p-4 ring-2 ring-violet-300">Cyberpunk 2077</p>
+      <p class="bg-violet-50 p-4 ring-2 ring-violet-300">Va-11 Hall-A</p>
+      <p class="bg-violet-50 p-4 ring-2 ring-violet-300">Bauldurs Gate 3</p>
+      <p class="bg-violet-50 p-4 ring-2 ring-violet-300">
         Divinity Two Original Sin
       </p>
-      <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Cities Skylines 2</p>
+      <p class="bg-violet-50 p-4 ring-2 ring-violet-300">Cities Skylines 2</p>
     </div>
     <span class="block pt-4 text-zinc-600"
       >Inactive: Ultrakill, hollow knight, celeste, besiege, polybridge

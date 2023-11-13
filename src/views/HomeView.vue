@@ -1,27 +1,27 @@
 <template>
-  <div id="fixed" class="bg fixed h-screen -z-50 inset-0 bg-zinc-400/10">
-    <div class="flex justify-center top-0 left-0 right-0 -z-40">
+  <div id="fixed" class="bg fixed inset-0 -z-50 h-screen bg-zinc-400/10">
+    <div class="left-0 right-0 top-0 -z-40 flex justify-center">
       <div
         class="img w-full"
         :style="{ backgroundPosition: backgroundPosition }"
       ></div>
     </div>
-    <BG class="-z-10 fixed" />
+    <BG class="fixed -z-10" />
   </div>
 
   <Scroller />
   <Title />
   <div class="h-60">
     <div
-      class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-6 mt-4"
+      class="striped ml-32 mt-4 h-full w-0.5 lg:ml-96 lg:translate-x-6"
     ></div>
   </div>
   <a id="About"></a>
   <div class="h-60">
-    <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-6"></div>
+    <div class="striped ml-32 h-full w-0.5 lg:ml-96 lg:translate-x-6"></div>
   </div>
   <div
-    class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500"
+    class="m-1 ring-2 ring-zinc-500 backdrop-saturate-0 lg:ml-20 lg:w-9/12 lg:p-12"
   >
     <About />
     <Games />
@@ -29,18 +29,18 @@
 
   <div class="h-60">
     <div
-      class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-96 mt-4"
+      class="striped ml-32 mt-4 h-full w-0.5 lg:ml-96 lg:translate-x-96"
     ></div>
   </div>
   <a id="Contact"></a>
   <div class="h-60">
-    <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-96"></div>
+    <div class="striped ml-32 h-full w-0.5 lg:ml-96 lg:translate-x-96"></div>
   </div>
   <div
-    class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500 bg-zinc-100/80 relative"
+    class="relative m-1 bg-zinc-100/80 ring-2 ring-zinc-500 backdrop-saturate-0 lg:ml-20 lg:w-9/12 lg:p-12"
   >
     <svg
-      class="absolute hidden lg:block left-0 top-0"
+      class="absolute left-0 top-0 hidden lg:block"
       xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
@@ -52,7 +52,7 @@
       ></path>
     </svg>
     <svg
-      class="absolute hidden lg:block right-0 top-0"
+      class="absolute right-0 top-0 hidden lg:block"
       xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
@@ -64,7 +64,7 @@
       ></path>
     </svg>
     <svg
-      class="absolute hidden lg:block left-0 bottom-0"
+      class="absolute bottom-0 left-0 hidden lg:block"
       xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
@@ -76,7 +76,7 @@
       ></path>
     </svg>
     <svg
-      class="absolute hidden lg:block right-0 bottom-0"
+      class="absolute bottom-0 right-0 hidden lg:block"
       xmlns="http://www.w3.org/2000/svg"
       width="48"
       height="48"
@@ -102,15 +102,15 @@
   </div>
   <div class="h-60">
     <div
-      class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-80 mt-4"
+      class="striped ml-32 mt-4 h-full w-0.5 lg:ml-96 lg:translate-x-80"
     ></div>
   </div>
   <a id="Skills"></a>
   <div class="h-60">
-    <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-80"></div>
+    <div class="striped ml-32 h-full w-0.5 lg:ml-96 lg:translate-x-80"></div>
   </div>
   <div
-    class="lg:ml-20 lg:w-9/12 lg:p-12 m-1 bg-slate-300/50 hover:shadow-lg transition-all ring-2 ring-slate-600 ring-offset-8"
+    class="m-1 bg-slate-300/50 ring-2 ring-slate-600 ring-offset-8 transition-all hover:shadow-lg lg:ml-20 lg:w-9/12 lg:p-12"
     v-motion
     :initial="{ opacity: 0 }"
     :enter="{
@@ -125,15 +125,15 @@
   </div>
   <div class="h-60">
     <div
-      class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-20 mt-4"
+      class="striped ml-32 mt-4 h-full w-0.5 lg:ml-96 lg:translate-x-20"
     ></div>
   </div>
   <a id="Projects"></a>
   <div class="h-60">
-    <div class="ml-32 lg:ml-96 w-0.5 h-full striped lg:translate-x-20"></div>
+    <div class="striped ml-32 h-full w-0.5 lg:ml-96 lg:translate-x-20"></div>
   </div>
   <div
-    class="lg:ml-20 lg:w-9/12 lg:p-12 backdrop-saturate-0 ring-2 m-1 ring-zinc-500 backdrop-blur-lg lg:backdrop-blur-0"
+    class="m-1 ring-2 ring-zinc-500 backdrop-blur-lg backdrop-saturate-0 lg:ml-20 lg:w-9/12 lg:p-12 lg:backdrop-blur-0"
   >
     <Projects />
   </div>
@@ -141,7 +141,7 @@
   <Footer class="z-[999]" />
   <div
     id="navbar"
-    class="fixed top-0 right-0 left-0 flex justify-around p-2 bg-slate-50/80 flex-col backdrop-blur-md duration-300 shadow-lg lg:left-auto lg:bottom-0 lg:right-10 lg:bg-transparent lg:backdrop-blur-sm lg:shadow-none"
+    class="fixed left-0 right-0 top-0 flex flex-col justify-around bg-slate-50/80 p-2 shadow-lg backdrop-blur-md duration-300 lg:bottom-0 lg:left-auto lg:right-10 lg:bg-transparent lg:shadow-none lg:backdrop-blur-sm"
   >
     <a
       v-motion
@@ -156,7 +156,7 @@
         },
       }"
       @click="scrollToSection('About')"
-      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
+      class="content-l inline-block w-max bg-gradient-to-r from-slate-600 to-gray-800 bg-clip-text text-right text-2xl font-thin text-transparent"
       >About</a
     >
     <a
@@ -172,7 +172,7 @@
         },
       }"
       @click="scrollToSection('Contact')"
-      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
+      class="content-l inline-block w-max bg-gradient-to-r from-slate-600 to-gray-800 bg-clip-text text-right text-2xl font-thin text-transparent"
       >Contact / Links</a
     >
     <a
@@ -188,7 +188,7 @@
         },
       }"
       @click="scrollToSection('Skills')"
-      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
+      class="content-l inline-block w-max bg-gradient-to-r from-slate-600 to-gray-800 bg-clip-text text-right text-2xl font-thin text-transparent"
       >Skills / Tools</a
     >
     <a
@@ -204,7 +204,7 @@
         },
       }"
       @click="scrollToSection('Projects')"
-      class="content-l text-2xl font-thin w-max text-right bg-gradient-to-r from-slate-600 to-gray-800 inline-block text-transparent bg-clip-text"
+      class="content-l inline-block w-max bg-gradient-to-r from-slate-600 to-gray-800 bg-clip-text text-right text-2xl font-thin text-transparent"
       >Projects</a
     >
   </div>
@@ -304,7 +304,7 @@ div.img {
 .content-l::after {
   transition: 0.4s ease-in-out;
   content: "";
-  @apply w-0 bg-blue-300/40 absolute -z-10 top-1/2 h-1/2 bottom-0 right-0;
+  @apply absolute bottom-0 right-0 top-1/2 -z-10 h-1/2 w-0 bg-blue-300/40;
 }
 .content-l:hover::after {
   @apply w-full;

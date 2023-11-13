@@ -1,6 +1,6 @@
 <template>
   <div
-    class="border-l-4 border-black fixed right-0 top-0 -z-10 shadow-inner lg:w-10 w-5"
+    class="fixed right-0 top-0 -z-10 w-5 border-l-4 border-black shadow-inner lg:w-10"
     :style="{ height }"
   ></div>
 </template>

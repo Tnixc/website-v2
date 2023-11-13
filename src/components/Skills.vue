@@ -13,10 +13,10 @@
       },
     }"
   >
-    <h1 class="bg-cyan-300/20 backdrop-blur-sm h-30 w-fit"># Skills</h1>
+    <h1 class="h-30 w-fit bg-cyan-300/20 backdrop-blur-sm"># Skills</h1>
   </div>
   <p
-    class="backdrop-blur-md lg:backdrop-blur-none text-lg p-12 bg-slate-200/80 border-l-4 border-slate-600"
+    class="border-l-4 border-slate-600 bg-slate-200/80 p-12 text-lg backdrop-blur-md lg:backdrop-blur-none"
   >
     I mainly do UI/UX design and Front-end development, but I would like to
     learn more about how js frameworks and web technologies work under the hood.
@@ -24,22 +24,22 @@
   </p>
   <div class="">
     <h2
-      class="text-4xl pt-10 pl-10 border-l-4 border-indigo-600 bg-indigo-300/50"
+      class="border-l-4 border-indigo-600 bg-indigo-300/50 pl-10 pt-10 text-4xl"
     >
       ## Languages
     </h2>
     <div
       id="cards"
-      class="items-center justify-center p-4 border-4 border-slate-600 border-r-0"
+      class="items-center justify-center border-4 border-r-0 border-slate-600 p-4"
     >
       <div class="card">
         <div class="card-content">
-          <div class="h-full flex items-center">
+          <div class="flex h-full items-center">
             <svg
               role="img"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              class="w-16 h-16"
+              class="h-16 w-16"
             >
               <title>TypeScript</title>
               <path
@@ -60,10 +60,10 @@
       </div>
       <div class="card">
         <div class="card-content">
-          <div class="h-full flex items-center">
+          <div class="flex h-full items-center">
             <svg
               role="img"
-              class="w-16 h-16"
+              class="h-16 w-16"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -87,11 +87,11 @@
       </div>
       <div class="card">
         <div class="card-content">
-          <div class="h-full flex items-center">
+          <div class="flex h-full items-center">
             <svg
               role="img"
               viewBox="0 0 24 24"
-              class="w-10 h-10"
+              class="h-10 w-10"
               xmlns="http://www.w3.org/2000/svg"
             >
               <title>HTML5</title>
@@ -111,10 +111,10 @@
       </div>
       <div class="card">
         <div class="card-content">
-          <div class="h-full flex items-center">
+          <div class="flex h-full items-center">
             <svg
               role="img"
-              class="w-16 h-16"
+              class="h-16 w-16"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -137,10 +137,10 @@
       </div>
       <div class="card">
         <div class="card-content">
-          <div class="h-full flex items-center">
+          <div class="flex h-full items-center">
             <svg
               role="img"
-              class="w-14 h-14"
+              class="h-14 w-14"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -171,15 +171,15 @@
       </div>
     </div>
     <h2
-      class="text-4xl pt-10 pl-10 border-l-4 border-indigo-600 bg-indigo-300/50"
+      class="border-l-4 border-indigo-600 bg-indigo-300/50 pl-10 pt-10 text-4xl"
     >
       ## Frameworks / Libraries
     </h2>
-    <div class="flex flex-wrap p-2 gap-2 bg-zinc-200 m-1">
+    <div class="m-1 flex flex-wrap gap-2 bg-zinc-200 p-2">
       <VueCard />
       <TailwindCard />
     </div>
-    <div class="mx-3 bg-zinc-100 p-2 text-xl w-fit mb-3">
+    <div class="mx-3 mb-3 w-fit bg-zinc-100 p-2 text-xl">
       I also tried out three.js as you can see in the rotating models above
       (hover)
     </div>
@@ -230,13 +230,13 @@ export default {
   @apply opacity-100;
 }
 .card {
-  @apply flex-grow flex h-48 flex-col relative hover:before:opacity-100 before:z-[3] after:z-[1] hover:shadow-lg transition-all duration-500 backdrop-blur-sm;
+  @apply relative flex h-48 flex-grow flex-col backdrop-blur-sm transition-all duration-500 before:z-[3] after:z-[1] hover:shadow-lg hover:before:opacity-100;
   width: calc(1 / 3);
   min-width: 22rem;
 }
 .card::before,
 .card::after {
-  @apply content-[""] h-full opacity-0 absolute transition-opacity duration-500 w-full  left-0 top-0;
+  @apply absolute left-0 top-0 h-full w-full opacity-0 transition-opacity  duration-500 content-[""];
 }
 .card::before {
   background: radial-gradient(
@@ -253,6 +253,6 @@ export default {
   );
 }
 .card > .card-content {
-  @apply bg-zinc-300/60 flex flex-col grow absolute z-[2] p-2.5 inset-0.5;
+  @apply absolute inset-0.5 z-[2] flex grow flex-col bg-zinc-300/60 p-2.5;
 }
 </style>

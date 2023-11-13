@@ -57,6 +57,6 @@ body {
   content: "";
   inset: 40%;
   filter: hue-rotate(180deg) !important;
-  @apply rounded-full bg-white absolute shadow-xl;
+  @apply absolute rounded-full bg-white shadow-xl;
 }
 </style>
