@@ -22,7 +22,7 @@ function handleScroll() {
     document.body.offsetHeight,
     document.documentElement.clientHeight,
     document.documentElement.scrollHeight,
-    document.documentElement.offsetHeight
+    document.documentElement.offsetHeight,
   );
   const h = (scrollY / limit) * 120;
   height.value = `${h}vh`;

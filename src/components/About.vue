@@ -52,13 +52,18 @@
           /></span>
         </div>
         <p class="text-lg pt-4 text-slate-500">
-          I'm a <p class="inline text-slate-900">15 year old high school student from Hong Kong living in Canada.</p> 
+          I'm a
+          <span class="inline text-slate-900"
+            >15 year old high school student from Hong Kong living in
+            Canada.</span
+          >
           I enjoy video games, coding, reading books and webcomics, watching
-          anime, listening to lots of jpop, touhou songs, vocaloids and all that, and doing 2D and 3D art. I started webdev around 2022, but
+          anime, listening to lots of jpop, touhou songs, vocaloids and all
+          that, and doing 2D and 3D art. I started webdev around 2022, but
           honestly time has been blur since 2020 so I'm not sure.
-          <br /><br />I also like trains and bikes(a huge fan of dutch urban design),
-          public transit, typography, and open source. I also like chilling in
-          IKEA and hiking :3
+          <br /><br />I also like trains and bikes(a huge fan of dutch urban
+          design), public transit, typography, and open source. I also like
+          chilling in IKEA and hiking :3
         </p>
       </div>
     </div>
@@ -99,7 +104,8 @@ p {
   font-family: "Geist", sans-serif;
   font-variation-settings: "wght" 100;
 }
-p > p{
+p > span {
   font-variation-settings: "wght" 140;
+  font-family: "Geist", sans-serif;
 }
 </style>

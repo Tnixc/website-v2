@@ -15,14 +15,23 @@
   >
     <h1 class="bg-cyan-300/20 backdrop-blur-sm h-30 w-fit"># Skills</h1>
   </div>
-  <p class="backdrop-blur-md lg:backdrop-blur-none text-lg p-12 bg-slate-200/80 border-l-4 border-slate-600">
+  <p
+    class="backdrop-blur-md lg:backdrop-blur-none text-lg p-12 bg-slate-200/80 border-l-4 border-slate-600"
+  >
     I mainly do UI/UX design and Front-end development, but I would like to
     learn more about how js frameworks and web technologies work under the hood.
     Gonna learn how to do SSR one day but that day is not today.
   </p>
   <div class="">
-    <h2 class="text-4xl pt-10 pl-10 border-l-4 border-indigo-600 bg-indigo-300/50">## Languages</h2>
-    <div id="cards" class="items-center justify-center p-4 border-4 border-slate-600 border-r-0">
+    <h2
+      class="text-4xl pt-10 pl-10 border-l-4 border-indigo-600 bg-indigo-300/50"
+    >
+      ## Languages
+    </h2>
+    <div
+      id="cards"
+      class="items-center justify-center p-4 border-4 border-slate-600 border-r-0"
+    >
       <div class="card">
         <div class="card-content">
           <div class="h-full flex items-center">
@@ -161,7 +170,9 @@
         </div>
       </div>
     </div>
-    <h2 class="text-4xl pt-10 pl-10 border-l-4 border-indigo-600 bg-indigo-300/50">
+    <h2
+      class="text-4xl pt-10 pl-10 border-l-4 border-indigo-600 bg-indigo-300/50"
+    >
       ## Frameworks / Libraries
     </h2>
     <div class="flex flex-wrap p-2 gap-2 bg-zinc-200 m-1">
@@ -169,7 +180,8 @@
       <TailwindCard />
     </div>
     <div class="mx-3 bg-zinc-100 p-2 text-xl w-fit mb-3">
-      I also tried out three.js as you can see in the rotating models above (hover)
+      I also tried out three.js as you can see in the rotating models above
+      (hover)
     </div>
     <Tools />
   </div>
@@ -190,7 +202,9 @@ export default {
   mounted() {
     document.getElementById("cards")!.onmousemove = (e) => {
       for (const card of Array.from(
-        document.getElementsByClassName("card") as HTMLCollectionOf<HTMLElement>
+        document.getElementsByClassName(
+          "card",
+        ) as HTMLCollectionOf<HTMLElement>,
       )) {
         const rect = card.getBoundingClientRect(),
           x = e.clientX - rect.left,

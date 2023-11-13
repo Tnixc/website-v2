@@ -83,7 +83,7 @@ export default {
   mounted() {
     async function update(this: any) {
       const data = await fetch(
-        "https://api.github.com/repos/Tnixc/website-v2/branches/main"
+        "https://api.github.com/repos/Tnixc/website-v2/branches/main",
       );
       const json = await data.json();
       const x = json.commit.sha;
@@ -97,7 +97,7 @@ export default {
       const y = date.getUTCFullYear();
       //@ts-ignore
       function relativeDate(date) {
-      //@ts-ignore
+        //@ts-ignore
         const diff = Math.round((new Date() - new Date(date)) / 1000);
 
         const minute = 60;
@@ -140,7 +140,7 @@ export default {
     update.call(this);
     async function d(this: any) {
       const data = await fetch(
-        "https://api.github.com/repos/Tnixc/website-v2/branches/main"
+        "https://api.github.com/repos/Tnixc/website-v2/branches/main",
       );
       const json = await data.json();
       const x = json.commit.commit.author.date;

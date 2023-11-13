@@ -138,7 +138,7 @@
     <Projects />
   </div>
   <div class="h-80"></div>
-  <Footer  class="z-[999]"/>
+  <Footer class="z-[999]" />
   <div
     id="navbar"
     class="fixed top-0 right-0 left-0 flex justify-around p-2 bg-slate-50/80 flex-col backdrop-blur-md duration-300 shadow-lg lg:left-auto lg:bottom-0 lg:right-10 lg:bg-transparent lg:backdrop-blur-sm lg:shadow-none"
@@ -224,7 +224,7 @@ import Skills from "@/components/Skills.vue";
 const BG = defineAsyncComponent(() => import("@/components/BG.vue"));
 const Footer = defineAsyncComponent(() => import("@/components/Footer.vue"));
 const Projects = defineAsyncComponent(
-  () => import("@/components/Projects.vue")
+  () => import("@/components/Projects.vue"),
 );
 const backgroundPosition = ref("right 0px");
 
@@ -239,7 +239,7 @@ function parallax() {
     document.body.offsetHeight,
     document.documentElement.clientHeight,
     document.documentElement.scrollHeight,
-    document.documentElement.offsetHeight
+    document.documentElement.offsetHeight,
   );
   const translateY = ((scrollY * 1000) / limit) * 0.58;
   backgroundPosition.value = `right ${-translateY}px`;
@@ -251,7 +251,7 @@ function nav() {
   if (
     Math.max(
       document.documentElement.clientWidth || 0,
-      window.innerWidth || 0
+      window.innerWidth || 0,
     ) < 1024
   ) {
     if (scrollY > lastScroll) {
@@ -266,7 +266,7 @@ function nav() {
   if (
     Math.max(
       document.documentElement.clientWidth || 0,
-      window.innerWidth || 0
+      window.innerWidth || 0,
     ) > 1024
   ) {
     navbar.style.top = "0";

@@ -5,9 +5,7 @@
     @mouseleave="stopRotation"
   >
     <div class="bg-green-200 relative">
-      <div
-        class="aspect-square "
-      >
+      <div class="aspect-square">
         <div ref="container"></div>
         <div
           class="absolute inset-10 bg-green-300/80 -z-10 rounded-full blur-xl"

@@ -149,7 +149,7 @@
   font-family: "Geist", sans-serif;
   font-variation-settings: "wght" 128;
 }
-.img{
+.img {
   @apply w-full h-full bg-cover bg-left-top bg-no-repeat;
 }
 .elemental {

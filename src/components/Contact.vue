@@ -1,5 +1,5 @@
 <template>
-  <div id="container" ref="target" class=" hover:shadow-md">
+  <div id="container" ref="target" class="hover:shadow-md">
     <h1 class="text-5xl bg-sky-200 border-l-2 border-t-2 border-blue-500">
       ## Contact + Links
     </h1>
@@ -16,32 +16,34 @@
           <p class="p-2 font-xl">tnixxc@gmail.com</p>
         </div>
         <a
-          v-thover="{ borderWidth: 4, scale: 1.2 ,invertColor:'false' ,borderColor: '#f59e0b' }"
+          v-thover="{
+            borderWidth: 4,
+            scale: 1.2,
+            invertColor: 'false',
+            borderColor: '#f59e0b',
+          }"
           class="li p-2 bg-blue-50 flex items-center m-1 hover:shadow-md"
           href="https://twitter.com/_Tnixc"
           target="_blank"
         >
           <i class="p-2 scale-125 fa-brands fa-x-twitter"></i>
-          <p
-            class="p-2 font-xl "
-          >
-            _Tnixc
-          </p>
-          <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square "></i>
+          <p class="p-2 font-xl">_Tnixc</p>
+          <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square"></i>
         </a>
 
         <a
-        v-thover="{ borderWidth: 4, scale: 1.2 ,invertColor:'false' ,borderColor: '#f59e0b' }"
-          class="li p-2 bg-blue-50 flex items-center m-1 hover:shadow-md "
+          v-thover="{
+            borderWidth: 4,
+            scale: 1.2,
+            invertColor: 'false',
+            borderColor: '#f59e0b',
+          }"
+          class="li p-2 bg-blue-50 flex items-center m-1 hover:shadow-md"
           href="https://github.com/Tnixc"
           target="_blank"
         >
           <i class="p-2 scale-125 fa-brands fa-github"></i>
-          <p
-            class="p-2 font-xl "
-          >
-            Tnixc
-          </p>
+          <p class="p-2 font-xl">Tnixc</p>
           <i class="p-2 scale-105 fa-solid fa-arrow-up-right-from-square"></i>
         </a>
         <div class="flex-grow w-full"></div>
@@ -108,9 +110,11 @@ const cardTransformOpposite = computed(() => {
   transition: 0.25s linear;
 }
 #container {
-  transform: v-bind(cardTransform) !important; /* NO IDEA WHY THIS IS NECESSARY */
+  transform: v-bind(
+    cardTransform
+  ) !important; /* NO IDEA WHY THIS IS NECESSARY */
   transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1);
-} 
+}
 #container > div > div {
   transform: v-bind(cardTransformOpposite) !important;
   transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1);

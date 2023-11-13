@@ -3,7 +3,7 @@
     ## Games
   </h1>
   <div
-    class=" border-l-2 lg:p-6 p-4 bg-gradient-to-t from-indigo-300/30 to-violet-200 border-violet-300 border-b-zinc-50 border-b-2"
+    class="border-l-2 lg:p-6 p-4 bg-gradient-to-t from-indigo-300/30 to-violet-200 border-violet-300 border-b-zinc-50 border-b-2"
   >
     <div class="flex gap-2 flex-wrap">
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">
@@ -22,7 +22,10 @@
       </p>
       <p class="p-4 ring-2 ring-violet-300 bg-violet-50">Cities Skylines 2</p>
     </div>
-    <span class="block pt-4 text-zinc-600">Inactive: Ultrakill, hollow knight, celeste, besiege, polybridge series</span>
+    <span class="block pt-4 text-zinc-600"
+      >Inactive: Ultrakill, hollow knight, celeste, besiege, polybridge
+      series</span
+    >
   </div>
 </template>
 <style scoped>
