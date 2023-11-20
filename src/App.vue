@@ -53,6 +53,8 @@ body {
   scroll-behavior: smooth;
   cursor: none;
   -webkit-user-drag: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 *::selection {
   @apply bg-violet-300 text-black;
