@@ -98,13 +98,13 @@ export default {
       function relativeDate(date: Date) {
         const now = new Date();
         const diffTime = Math.abs(now - date);
-        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-        return diffDays
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        return diffDays;
       }
 
       const relative = relativeDate(date);
 
-      return `Last updated ${relative} days ago, on ${d}/${m}/${y}`;
+      return `Last updated ${relative} day(s) ago, on ${d}/${m}/${y}`;
     }
 
     update.call(this);
