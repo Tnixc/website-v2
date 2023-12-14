@@ -1,6 +1,6 @@
 # Website v2
 
-My personal website
+v2 of my personal website. See https://github.com/tnixc/website-v3 instead
 
 Vue + Tailwind
 
